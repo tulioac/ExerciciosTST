@@ -1,6 +1,7 @@
 # Exercícios do TST
 
 ## Unidades
+Questões dividios pelas respectivas unidades.
 
 - [Unidade 01](unidade01)
 - [Unidade 02](unidade02)
@@ -12,3 +13,8 @@
 - [Unidade 08](unidade08)
 - [Unidade 09](unidade09)
 - [Unidade 10](unidade10)
+
+## Outros
+Códigos produzidos para testes, implementações próprias de funções da linguagem ou questões perdidas. 
+
+- [Miscelânea](outros)
