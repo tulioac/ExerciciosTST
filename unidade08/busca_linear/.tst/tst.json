@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def busca(seq, valor):\n    for i in range(len(seq)):\n        if seq[i] == valor:\n            return i\n    return -1",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nbusca = getattr(undertest, 'busca', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_basico(self):\n       seq = [10, 7, 8, 6, 2, 31, 12]\n       assert busca(seq, 8) == 2\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "87fac70752018f6960c7157f819d2308",
+  "iid": 5251796410826752,
+  "activity_revision": "1.0.0"
+}

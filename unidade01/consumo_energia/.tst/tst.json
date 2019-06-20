@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# Calculando o consumo de energia em Joules\n\npotencia = int(raw_input())\ntempo = int(raw_input())\ntempo /= 60.0\n\n\nprint str(potencia * tempo/1000) , \"kWh\"",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "abff0989bd9a82fe87f331ff0785f0bf",
+  "iid": 5851165841424384,
+  "activity_revision": "1.0.0"
+}

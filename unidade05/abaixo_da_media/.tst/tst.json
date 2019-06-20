@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "lista = []\nmedia = 0\nvalor = ''\n\nwhile(valor != 'fim'):\n    valor = raw_input()\n    if valor != 'fim':\n        lista.append(float(valor))\n        media += float(valor)\n\nmedia /= len(lista)\n\nprint \"%.2f\" % media\n\nfor i in range(len(lista)):\n    if lista[i] < media:\n        print \"%d %d\" % (i+1, lista[i])\n\n\n\n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "20a28fe2bbbc14a0e29b980f2b90e1c9",
+  "iid": 6594538646798336,
+  "activity_revision": "1.0.1"
+}

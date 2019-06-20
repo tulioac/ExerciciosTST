@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "parcial = float(raw_input())\n\nfinal = (5 - parcial * 0.6) / 0.4\n\nprint \"%.1f\" % final",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "718f1e68a9a7ae68fffb9493cefefede",
+  "iid": 5975598291746816,
+  "activity_revision": "1.2.0"
+}

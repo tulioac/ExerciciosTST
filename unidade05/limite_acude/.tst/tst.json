@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nlimite_superior = float(raw_input())\nnivel_atual = float(raw_input())\n\nwhile (True):\n    if nivel_atual >= limite_superior:\n        print \"A\u00e7ude passou a liberar \u00e1gua.\"\n        print \"N\u00edvel: %.2f\" % nivel_atual\n        break\n    else:\n        entrada = raw_input()\n        informacoes = entrada.split()\n        acao = informacoes[0]\n        quantidade = float(informacoes[1])\n\n        if acao == 'chuva' or acao == 'afluente':\n            nivel_atual += quantidade\n\n        elif acao == 'demanda' and (nivel_atual - quantidade) >= 0:\n            nivel_atual -= quantidade\n\n        \n\n    ",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9f98cca3523c088fa7cc269944916a48",
+  "iid": 5868034728132608,
+  "activity_revision": "1.0.1"
+}

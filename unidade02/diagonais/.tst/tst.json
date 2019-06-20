@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "lados = int(raw_input())\ndiagonais = lados*(lados-3)/2\n\nprint \"%d lados => %d diagonais\" % (lados, diagonais)",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2c612e0728511dd844cee2ce2b104176",
+  "iid": 5751932366880768,
+  "activity_revision": "2.0.1"
+}

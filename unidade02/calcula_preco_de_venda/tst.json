@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "101.00\n64\n40\n20.65\n1\n6\n3.35\n",
+      "output": "Preço de venda é R$ 298.61 (R$ 298.00 + R$ 0.61)\n"
+    }
+  ]
+}

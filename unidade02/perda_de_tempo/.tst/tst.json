@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nval1 = int(raw_input())\nval2 = int(raw_input())\nval3 = int(raw_input())\nval4 = int(raw_input())\nval5 = int(raw_input())\n\ntotal = val1 + val2 + val3 + val4 + val5\nmedia = total / 5.0\nsemana = 24 * 60 * 7.0\nporcentagem = 100.0 * media * 7 / semana\nepisodio = total / 50\n\nprint \"Voc\u00ea perdeu %d min na semana (m\u00e9dia de %.1f min por dia).\" % (total, media)\nprint \"Isso significa %.2f%% da sua semana produtiva.\" % porcentagem\nprint \"Daria para assistir %d epis\u00f3dio(s) de House.\" % episodio",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0a52c85374460cf7ae93269260ec3017",
+  "iid": 6653169849335808,
+  "activity_revision": "1.1.1"
+}

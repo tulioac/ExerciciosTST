@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nreais = float(raw_input('Reais? '))\ncotacao = float(raw_input('Cota\u00e7\u00e3o? '))\n\ndolar = reais * cotacao\n\nprint \"Convers\u00e3o: $\" , dolar",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d2cf34e95556d75d36ae2e74d81eb830",
+  "iid": 6148910389133312,
+  "activity_revision": "1.0.1"
+}

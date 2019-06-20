@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "4\n2\n",
+      "name": "exemplo",
+      "output": "===== Operadores =====\nA = 4\nB = 2\nAdição = 6\nSubtração = 2\nMultiplicação = 8\nDivisão = 2\nResto = 0\nExponenciação = 16\nNegação de A = -4\nA é igual a B? False\nA é diferente de B? True\nA é maior que B? True\nB é maior que A? False\nA é menor ou igual a B? False\n"
+    }
+  ]
+}

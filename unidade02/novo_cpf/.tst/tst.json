@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "parte1 = int(raw_input())\nparte2 = int(raw_input())\nparte3 = int(raw_input())\n\nparte4 = parte3 / 100 + parte3 / 10 % 10 + parte3 % 10\n\nprint \"%03d.%03d.%03d-%02d\" % (parte1, parte2, parte3, parte4)\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "14dd7b69dcfaf7519567caa330a2fe84",
+  "iid": 5527269942493184,
+  "activity_revision": "1.0.0"
+}

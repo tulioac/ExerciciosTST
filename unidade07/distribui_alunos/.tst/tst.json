@@ -1,0 +1,24 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ndistribui_alunos = getattr(undertest, 'distribui_alunos', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_semelhante_ao_da_prova_esq(self):\n        t1 = [10,38,87,22,25]\n        t2 = [43,21,96,33,85,17,94]\n        assert distribui_alunos(t1, t2, 6) == [[10, 43, 38, 21, 87, 96], [22, 33, 25, 85, 17, 94]]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "p.py": {
+      "category": "answer",
+      "data": "def distribui_alunos(turma1, turma2, capacidade):\n    sala1 = []\n    sala2 = []\n    lab = [sala1, sala2]\n\n    ultima_turma = -1\n    sala_atual = 0\n    i = -1\n    while i < capacidade * 2:\n        if sala_atual == len(lab):\n            break\n        i += 1\n        if len(lab[sala_atual]) < capacidade:\n            if ultima_turma != 1 and i < len(turma1) and len(lab[sala_atual]) < capacidade:\n                lab[sala_atual].append(turma1[i])\n            \n            if ultima_turma != 2 and i < len(turma2) and len(lab[sala_atual]) < capacidade:\n                lab[sala_atual].append(turma2[i])\n        else:\n            if len(sala2) < capacidade:\n                if sala1[len(sala1)-1] != turma2[i-1]:\n                    sala2.append(turma2[i-1])\n            i -= 1  \n            sala_atual +=1\n    return lab\n",
+      "name": "p.py"
+    },
+    "x.py": {
+      "category": "answer",
+      "data": "def distribui_alunos(turma1, turma2, capacidade):\n    sala_1 = []\n    sala_2 = []\n    laboratorio = [sala_1, sala_2]    \n    indice = 0\n    if len(turma1) > 0 or len(turma2) > 0:\n        maior_turma = 0\n        if len(turma1) >= len(turma2):\n            maior_turma = len(turma1)\n        else:\n            maior_turma = len(turma2)\n        for i in range(capacidade):\n            if i < len(turma1):\n                sala_1.append(turma1[i])\n            if i < len(turma2):\n                sala_1.append(turma2[i])\n            if len(sala_1) == capacidade or i == maior_turma:\n                indice = i + 1\n                break\n    \n        if len(turma1) + len(turma2) > capacidade:\n            for i in range(indice, maior_turma):\n                if i < len(turma1):\n                    sala_2.append(turma1[i])\n                if i < len(turma2):\n                    sala_2.append(turma2[i])\n\n    return laboratorio\n\n",
+      "name": "x.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bb02bfc330f24cc44187c4c7a0ff89c0",
+  "iid": 5782787076390912,
+  "activity_revision": "1.0.6"
+}

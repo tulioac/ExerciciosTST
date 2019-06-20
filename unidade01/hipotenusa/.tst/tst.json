@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "import math\n\ncat1 = float(raw_input(\"Medida do Cateto 1? \"))\ncat2 = float(raw_input(\"Medida do Cateto 2? \"))\n\nhip = math.sqrt(cat1**2 + cat2**2)\n\nprint \"Medida da Hipotenusa: %.2f\" % hip",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e8e04389e8a06060341b3a1bc8589220",
+  "iid": 5780052524400640,
+  "activity_revision": "1.1.3"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def calcula_conta(tabela):\n    conta = 0\n    \n    for linha in range(1, len(tabela)):\n        conta += int(tabela[linha][1]) * int(tabela[linha][2]) * int(tabela[linha][3]) * 0.28 / 1000\n\n    msg = \"R$ %.2f\" % conta\n    return msg\n\ntabela = [[\"Equipamento\", \"Quantidade\", \"Tempo de Uso (horas)\", \"Potencia (Watts)\"],\n          [\"AR-CONDICIONADO\",    1,              240,               2000],\n          [\"COMPUTADOR\",         2,              150,               180],\n          [\"TV\",                 3,              150,               110]]\n\nprint calcula_conta(tabela)\n",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_conta = getattr(undertest, 'calcula_conta', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n        tabela = [[\"Equipamento\", \"Quantidade\", \"Tempo de Uso (horas)\", \"Potencia (Watts)\"], [\"AR-CONDICIONADO\", 1, 240, 2000], [\"COMPUTADOR\", 2, 150, 180], [\"TV\", 3, 150, 110]]\n\n        assert calcula_conta(tabela) == \"R$ 163.38\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "499f0d3ed9d675982a2ea0b6f77e1669",
+  "iid": 6416410951548928,
+  "activity_revision": "1.0.0"
+}

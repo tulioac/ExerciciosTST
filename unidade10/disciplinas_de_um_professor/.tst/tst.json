@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def meu_in(lista, elemento):\n    for i in lista:\n        if i == elemento:\n            return True\n    return False\n\ndef disciplinas(alocacao, professor):\n    aulas = []\n    creditos = 0\n\n    for disciplina in alocacao:\n        for professores in alocacao[disciplina]:\n            if professores == professor:\n                if not meu_in(aulas, disciplina[0]):\n                    aulas.append(disciplina[0])\n                creditos += disciplina[1]\n\n    return [aulas, creditos]   \n\n\n\nalocacao = {(\"P1\", 4): ['Jorge', 'Dalton','Wilkerson'],\n    (\"LP1\", 4): ['Jorge', 'Dalton', 'Eliane', 'Wilkerson'],\n    (\"EVOL\", 2): ['Dalton'],\n    (\"IC\", 4): ['Eliane', 'Joseana'],\n    (\"P2\", 4): ['Livia', 'Raquel', 'Nazareno'],\n    (\"GRAFOS\", 2): ['Patricia', 'Patricia']}\n\n\nprint disciplinas(alocacao, \"Dalton\")\nprint\nprint disciplinas(alocacao, \"Patricia\")",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ndisciplinas = getattr(undertest, 'disciplinas', None)\n\nclass PublicTests(unittest.TestCase):\n   \n    def test_exemplo(self):\n        alocacao = {(\"P1\", 4): ['Jorge', 'Dalton','Wilkerson'],\n                    (\"LP1\", 4): ['Jorge', 'Dalton', 'Eliane', 'Wilkerson'],\n                    (\"EVOL\", 2): ['Dalton'],\n                    (\"IC\", 4): ['Eliane', 'Joseana'],\n                    (\"P2\", 4): ['Livia', 'Raquel', 'Nazareno'],\n                    (\"GRAFOS\", 2): ['Patricia', 'Patricia']}\n\n        assert set(disciplinas(alocacao, \"Dalton\")[0]) == set(['P1', 'LP1', 'EVOL'])\n        assert disciplinas(alocacao, \"Dalton\")[1] == 10\n        assert set(disciplinas(alocacao, \"Eliane\")[0]) == set(['LP1', 'IC'])\n        assert disciplinas(alocacao, \"Eliane\")[1] == 8\n        assert set(disciplinas(alocacao, \"Patricia\")[0]) == set(['GRAFOS'])\n        assert disciplinas(alocacao, \"Patricia\")[1] == 4\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "324955cb153f07f2763df180bfe9a28e",
+  "iid": 5317352644149248,
+  "activity_revision": "1.0.0"
+}

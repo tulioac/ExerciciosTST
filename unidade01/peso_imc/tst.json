@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "110\n1.80\n",
+      "name": "test_name",
+      "output": "IMC atual = 33.95\nPeso a ser ganho/perdido = -29.32\n",
+      "type": "io"
+    },
+    {
+      "category": "public",
+      "input": "78\n1.54\n",
+      "name": "test_name",
+      "output": "IMC atual = 32.89\nPeso a ser ganho/perdido = -18.95\n",
+      "type": "io"
+    }
+  ]
+}

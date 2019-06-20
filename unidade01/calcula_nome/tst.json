@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Carolina\n10\n",
+      "name": "exemplo",
+      "output": "Nome? Letra? R$ Orçamento: R$ 80.0\n"
+    }
+  ]
+}

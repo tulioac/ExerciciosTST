@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "lado_a = float(raw_input())\nlado_b = float(raw_input())\n\narea = lado_a * lado_b\n\ntinta = area * 3.6 / 50\n\nprint \"%.2f l\" % tinta",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "805dfd117d72a9fa974076d8b9092399",
+  "iid": 5106183497056256,
+  "activity_revision": "1.1.1"
+}

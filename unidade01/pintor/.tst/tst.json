@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "altura = float(raw_input())\nlargura = float(raw_input())\n\narea = altura * largura \n\npreco = area * 20\n\nprint \"R$ %.2f\" % preco",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ad608809e2ce6a0caf6fedc156fad323",
+  "iid": 6232083403898880,
+  "activity_revision": "2.0.1"
+}

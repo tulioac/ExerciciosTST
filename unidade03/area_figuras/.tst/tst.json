@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nimport math\n\ntipo = raw_input()\n\nif tipo == 'c\u00edrculo' or tipo == 'quadrado':\n    raio_lado = float(raw_input())\n    area = raio_lado * raio_lado    \n    if tipo == 'c\u00edrculo':\n        area *= math.pi\n        print \"\u00c1rea do c\u00edrculo: %.2f (cm2)\" % area\n    else:\n        print \"\u00c1rea do quadrado: %.2f (cm2)\" % area\n\n\nelse:\n    base = float(raw_input())\n    altura = float(raw_input())\n    area = base * altura\n    if tipo == 'ret\u00e2ngulo':    \n        print \"\u00c1rea do ret\u00e2ngulo: %.2f (cm2)\" % area\n    else:\n        area /= 2\n        print \"\u00c1rea do tri\u00e2ngulo: %.2f (cm2)\" % area\n\n\n\n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "09871177cb5bad04296931f75511c514",
+  "iid": 6740009927311360,
+  "activity_revision": "1.1.0"
+}

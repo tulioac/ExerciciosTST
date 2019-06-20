@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ncapacidade = int(raw_input(\"capacidade? \"))\npercentual = float(raw_input(\"percentual hoje? \"))\ngasto = int(raw_input(\"gasto di\u00e1rio? \"))\n\nvolume = capacidade * percentual / 100.0\ndias = volume / gasto\n\nprint \"volume: %.2f\" % volume\nprint \"dias restantes: %d\" % dias",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "110d207fffc5410b0b20c4be4a6ea10d",
+  "iid": 4810759674527744,
+  "activity_revision": "1.1.0"
+}

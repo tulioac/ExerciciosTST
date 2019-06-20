@@ -1,0 +1,13 @@
+{
+  "ignore": [
+    "public_tests.py",
+    "acceptance_tests.py"
+  ],
+  "tests": [
+    {
+      "category": "public",
+      "input": "100.0\n77 72 65\n101 110\nfim\n",
+      "output": "101 110\n"
+    }
+  ]
+}

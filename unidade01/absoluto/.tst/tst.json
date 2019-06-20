@@ -1,0 +1,14 @@
+{
+  "files": {
+    "programa.py": {
+      "category": "answer",
+      "data": "valor = int(raw_input())\n\nif valor >= 0:\n    print valor\n\nelse:\n    print valor*(-1)",
+      "name": "programa.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b862c90e3a59823ef07be35514843c05",
+  "iid": 4971490302754816,
+  "activity_revision": "1.0.0"
+}

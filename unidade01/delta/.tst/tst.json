@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "a = float(raw_input())\nb = float(raw_input())\nc = float(raw_input())\n\ndelta = b**2 - 4*a*c\n\nprint \"%.1f\" % delta",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fce124e2ff265b06161c778f0a1d2495",
+  "iid": 5875061395292160,
+  "activity_revision": "1.1.0"
+}

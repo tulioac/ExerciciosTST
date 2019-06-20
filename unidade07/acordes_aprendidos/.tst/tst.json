@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def acordes(musica_1, musica_2):\n    lista = []\n    for i in musica_1:\n        lista.append(i)\n\n\n    for j in musica_2:\n        igual = False\n        for k in musica_1:\n            if k == j:\n                igual = True\n        if igual == False:\n            lista.append(j)\n\n    return lista\n",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nacordes = getattr(undertest, 'acordes', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        m1 = ['c', 'd', 'dm']\n        m2 = ['c', 'a']\n        \n        assert acordes(m1, m2) == ['c', 'd', 'dm', 'a']\n        assert m1 == ['c', 'd', 'dm']\n        assert m2 == ['c', 'a']\n        \n        m1 = ['c', 'd']\n        m2 = ['c', 'a']\n        assert acordes(m1, m2) == ['c', 'd', 'a']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3e7bd272075c2666b8778a5f0fece9b5",
+  "iid": 5889778906038272,
+  "activity_revision": "1.0.0"
+}

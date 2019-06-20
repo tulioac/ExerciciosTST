@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "7\n3\n15\n10\n15\n",
+      "output": "Você perdeu 50 min na semana (média de 10.0 min por dia).\nIsso significa 0.69% da sua semana produtiva.\nDaria para assistir 1 episódio(s) de House.\n"
+    },
+    {
+      "category": "public",
+      "input": "10\n50\n40\n10\n10\n",
+      "output": "Você perdeu 120 min na semana (média de 24.0 min por dia).\nIsso significa 1.67% da sua semana produtiva.\nDaria para assistir 2 episódio(s) de House.\n"
+    }
+  ]
+}

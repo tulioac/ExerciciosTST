@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nnome = raw_input(\"Nome? \")\n\nletra = float(raw_input(\"Letra? R$ \"))\n\ncusto = len(nome) * letra\n\nprint \"Or\u00e7amento: R$\" , custo",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1932f1150fd5158172d2830bcd065f13",
+  "iid": 6426538853531648,
+  "activity_revision": "1.0.0"
+}

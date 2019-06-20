@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nprint \"An\u00e1lise da Turma\"\nprint 3*'='\n\naprovados = int(raw_input('N\u00famero de aprovados? '))\nreprovados = int(raw_input('N\u00famero de reprovados? '))\n\nprint 3*'-'\n\ntotal = aprovados + reprovados\n\nperc_aprovados = aprovados * 100.0 / total\nperc_reprovados = reprovados * 100.0 / total\n\nprint 'Total de alunos na turma: ' + str(total)\nprint \"Aprovados: \" + str(aprovados) + \" = %.1f%%\" % perc_aprovados\nprint \"Reprovados: \" + str(reprovados) + \" = %.1f%%\" % perc_reprovados\n\n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "00e3a29ba4c6e76b4b4914bc4e3a537a",
+  "iid": 5843715281125376,
+  "activity_revision": "1.0.1"
+}

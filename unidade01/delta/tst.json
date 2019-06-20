@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "2.0\n5.0\n2.0\n",
+      "output": "9.0\n"
+    },
+    {
+      "category": "public",
+      "input": "3.0\n2.0\n1.0\n",
+      "output": "-8.0\n",
+      "type": "io"
+    }
+  ]
+}

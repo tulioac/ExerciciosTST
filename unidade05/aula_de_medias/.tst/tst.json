@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nsoma = 0\nvalores = []\nmenores = []\nmaiores = []\n\nwhile(soma < 100):\n    valor = float(raw_input())\n    valores.append(valor)\n    soma += valor\n\nquant = len(valores)\n\nmedia = soma / quant\n\nprint \"Quantidade de n\u00fameros lidos: %d\" % quant\nprint \"Soma dos n\u00fameros lidos: %.2f\" % soma\nprint \"M\u00e9dia = %.2f\" % media\n\nfor i in range(len(valores)):\n    if valores[i] < media:\n        menores.append(i)\n    else:\n        maiores.append(i)\n\nif len(menores) > 0:\n    print\n    print \"Abaixo da m\u00e9dia\"\n    for i in range (len(menores)):\n        print \"%.2f (%do)\" % (valores[menores[i]], menores[i]+1)\n\nif len(maiores) > 0:\n    print\n    print \"Acima da m\u00e9dia\"\n    for i in range (len(maiores)):\n        print \"%.2f (%do)\" % (valores[maiores[i]], maiores[i]+1)\n",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 21,\n      \"vhalstead\": 160.54,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "27de776803e461c3be585705cdf3adfe",
+  "iid": 4927312973791232,
+  "activity_revision": "1.0.2"
+}

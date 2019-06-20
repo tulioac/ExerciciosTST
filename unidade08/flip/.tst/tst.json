@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def troca(lista, i, j):\n    lista[i], lista[j] = lista[j], lista[i]\n\ndef flip(lista, i, j):\n    print lista, \"inicio\"\n    for z in range(0, i-j, -1):\n        for k in range(i, j+z):\n                troca(lista, k, k+1)\n\n    print lista\n\nl1 = [1, 2, 3, 4, 5, 6, 7]\nflip(l1, 2, 5)\nprint \"[1, 2, 6, 5, 4, 3, 7]\" + ' *'",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nflip = getattr(undertest, 'flip', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = [1, 2, 3, 4, 5, 6, 7]\n        assert flip(l1, 2, 5) == None\n        assert l1 == [1, 2, 6, 5, 4, 3, 7]\n     \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3359a30efb70c09873e7eb415482c503",
+  "iid": 5906199773970432,
+  "activity_revision": "1.0.0"
+}

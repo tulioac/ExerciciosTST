@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\narea = float(raw_input(\"\u00c1rea constru\u00edda? \"))\naliquota = float(raw_input(\"Al\u00edquota? \"))\n\niptu = area * aliquota + 35.0\nprint \"IPTU: R$ %.2f\" % iptu\n\ncota_unica = iptu * 0.75\nseis_parcelas = iptu * 0.95\n\nprint\n\nprint \"Pagamento:\"\nprint \"1. Quota \u00fanica. R$ %.2f\" % cota_unica\nprint \"2. Em 6 parcelas. Total: R$ %.2f\" % seis_parcelas\nprint \"   6 x R$ %.2f\" % (seis_parcelas / 6)\nprint \"3. Em 10 parcelas. Total: R$ %.2f\" % iptu\nprint \"   10 x R$ %.2f\" % (iptu / 10)",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d008e44a9b9286a595bfdaa2f48d7b29",
+  "iid": 5435174972030976,
+  "activity_revision": "1.1.1"
+}

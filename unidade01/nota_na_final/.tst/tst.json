@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nprint \"== Est\u00e1gio 1 ==\"\npeso1 = float(raw_input(\"Peso? \"))\nnota1 = float(raw_input(\"Nota? \"))\n\nprint \"== Est\u00e1gio 2 ==\"\npeso2 = float(raw_input(\"Peso? \"))\nnota2 = float(raw_input(\"Nota? \"))\n\nprint \"== Est\u00e1gio 3 ==\"\npeso3 = float(raw_input(\"Peso? \"))\nnota3 = float(raw_input(\"Nota? \"))\n\nmedia_parcial = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3)\n\nmedia_cinco = (5.0 - media_parcial * 0.6) / 0.4\nmedia_sete = (7.0 - media_parcial * 0.6) / 0.4\n\nprint \"== Resultados ==\"\nprint \"M\u00e9dia parcial: %.1f\" % media_parcial\nprint \"Nota na final, pra m\u00e9dia 5.0 = %.1f\" % media_cinco\nprint \"Nota na final, pra m\u00e9dia 7.0 = %.1f\" % media_sete\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "43d633c831868736aeae023ea2c05e0b",
+  "iid": 6098108609986560,
+  "activity_revision": "1.1.0"
+}

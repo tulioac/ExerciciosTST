@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def insertion_sort(lista):\n    for i in range(1, len(lista)):\n        atual = lista[i]\n        k = i\n        while k > 0 and atual < lista[k - 1]:\n            lista[k] = lista[k-1]\n            k -= 1\n        lista[k] = atual",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ninsertion_sort = getattr(undertest, 'insertion_sort', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n      numeros = [6, 3, 7, 9, 1, 0]\n      insertion_sort(numeros)\n      assert numeros == [0, 1, 3, 6, 7, 9]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "87d160096f5ec5d14eb46ec496d00700",
+  "iid": 5320074177019904,
+  "activity_revision": "1.0.0"
+}

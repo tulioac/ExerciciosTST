@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# \u00c1rea e per\u00edmetro de um C\u00edrculo\nimport math\n\ndiametro = int(raw_input())\n\nraio = diametro / 2.0\n\narea = math.pi*raio**2\nperimetro = 2*math.pi*raio\nprint \"A: %.5f\" % area\nprint \"P: %.5f\" % perimetro\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "032cf0d7027e66bb0e11018b04536e2e",
+  "iid": 5131173361614848,
+  "activity_revision": "1.1.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ndef maior(lista):\n    i_max = 0\n    for i in range(len(lista)):\n        if lista[i_max] < lista[i]:\n            i_max = i\n    maximo = lista[i_max]\n    return maximo\n\n\nn_times = int(raw_input())\n\ntimes = []\ngols = []\n\nfor i in range(n_times*2):\n    entrada = raw_input()\n    if i % 2 == 0:\n        times.append(entrada)\n    else:\n        gols.append(int(entrada))\n\n\nmais_gols = maior(gols)\n\n\nprint \"Time(s) com melhor ataque (%d gol(s)):\" % mais_gols\nfor i in range(len(times)):\n    if gols[i] == mais_gols:\n        print times[i]\n\nmedia_gols = 0\nfor g in gols:\n    media_gols += g\n\nmedia_gols /= len(gols)*1.0\n\nprint \nprint \"M\u00e9dia de gols marcados: %.1f\" % media_gols\n",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 66.61,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e451ad04d868b313a8c341c51367baa3",
+  "iid": 5251389630447616,
+  "activity_revision": "1.1.1"
+}

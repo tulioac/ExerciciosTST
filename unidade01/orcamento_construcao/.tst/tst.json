@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\npreco_tijolo = float(raw_input(\"Digite o pre\u00e7o da unidade do tijolo (Em reais): \"))\naltura_tijolo = float(raw_input(\"Digite a altura do tijolo (Em metros): \"))\ncomprimento_tijolo = float(raw_input(\"Digite o comprimento do tijolo (Em metros): \"))\naltura_parede = float(raw_input(\"Digite a altura das paredes (Em metros): \"))\ncomprimento_parede = float(raw_input(\"Digite o comprimento das paredes (Em metros): \"))\n\nnum_tijolos_altura = altura_parede / altura_tijolo\nnum_tijolos_largura = comprimento_parede / comprimento_tijolo\nnum_tijolos_total = num_tijolos_altura * num_tijolos_largura\npreco_total = preco_tijolo * num_tijolos_total\nprint 'O n\u00famero total de tijolos \u00e9 ' + str(num_tijolos_total) + \" e o or\u00e7amento final \u00e9 de R$ \" + str(preco_total)\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "53474ff0533bbda66abb25cd3e5a44fa",
+  "iid": 5381378258501632,
+  "activity_revision": "1.0.2"
+}

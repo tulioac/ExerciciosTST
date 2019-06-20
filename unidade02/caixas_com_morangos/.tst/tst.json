@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nmorango = int(raw_input())\n\ncaixas = morango / 400\n\nperdidos = (morango - (caixas * 400))\nporcentagem = perdidos * 100.0 / morango\n\nprint \"Ser\u00e3o necess\u00e1rias %d caixa(s) para embalar os morangos.\" % caixas\nprint \"%.1f%% dos morangos ser\u00e3o perdidos.\" % porcentagem",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9357a4bb141a23d5a9aeb1f17d63bb92",
+  "iid": 6341125107351552,
+  "activity_revision": "1.0.0"
+}

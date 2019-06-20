@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def troca(lista, i, j):\n    lista[i], lista[j] = lista[j], lista[i]\n\ndef meu_insert(lista, num, pos):\n    lista.append(num)\n    for i in range(len(lista) - 1, pos, -1):\n        troca(lista, i, i-1)\n\ndef na_posicao(lista, a_inserir):\n    for i in range(len(a_inserir)):\n        meu_insert(lista, a_inserir[i][0], a_inserir[i][1])\n    print lista\n\nl = [10, 20, 30]\na_inserir = [(5, 1), (-2, 4), (0, 0)]\n\nna_posicao(l, a_inserir)",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nna_posicao = getattr(undertest, 'na_posicao', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     l = [10, 20, 30]\n     a_inserir = [(5, 1), (-2, 4), (0, 0)]\n     assert na_posicao(l, a_inserir) == None\n     assert l == [0, 10, 5, 20, 30, -2]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5814decafc408a8565a3d73d2bc288b1",
+  "iid": 5868998679855104,
+  "activity_revision": "1.0.1"
+}

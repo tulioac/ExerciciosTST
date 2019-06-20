@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "nota1 = float(raw_input())\nnota2 = float(raw_input())\nnota3 = float(raw_input())\n\nmedia = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10.0\n\nprint \"%.1f\" % media",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1af62bf9ac5e69eb84c03fecb16070b7",
+  "iid": 6479870133534720,
+  "activity_revision": "1.1.1"
+}

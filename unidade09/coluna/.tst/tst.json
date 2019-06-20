@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def coluna(matriz, i):\n    lista = []\n\n    for coluna in range(len(matriz[0])):\n        for linha in range(len(matriz)):\n            if coluna == i:\n                lista.append(matriz[linha][coluna])\n\n    return lista",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncoluna = getattr(undertest, 'coluna', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1(self):\n        M = [[1,1,1,1],[2,2,2,2],[3,3,3,3]]\n        assert coluna(M,0) == [1,2,3]\n        assert coluna(M,1) == [1,2,3]\n        assert coluna(M,2) == [1,2,3]\n        assert coluna(M,3) == [1,2,3]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "164950bf6d96b58cd2dd1719dcd94533",
+  "iid": 5323113604579328,
+  "activity_revision": "1.0.0"
+}

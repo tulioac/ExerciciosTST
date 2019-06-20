@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "numero = raw_input()\n\nvalor = 0\n\nvalor += int(numero[0])\nvalor += int(numero[1])\nvalor += int(numero[2])\nvalor += int(numero[3])\nvalor += int(numero[4])\n\ndigito = valor % 11\n\nprint \"%s-%02d\" % (numero, digito)",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2dca1b3a80ca44c04dd7dbf54ed5801a",
+  "iid": 5291182166900736,
+  "activity_revision": "1.1.0"
+}

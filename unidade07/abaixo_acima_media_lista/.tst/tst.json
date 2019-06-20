@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def organiza_por_media(lista):  \n    media = 0\n    for i in lista:\n        media += i\n    if len(lista) > 0:\n        media /= len(lista)\n\n        for j in range(len(lista)):\n            for i in range(0 ,len(lista) - 1, 1):\n                while(lista[i] > media and not (lista[i+1] > media)):\n                    lista[i], lista[i+1] = lista[i+1], lista[i]           \n\n    return lista\n\n\n",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\norganiza_por_media = getattr(undertest, 'organiza_por_media', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n\tp1 = [1,2,4,1,3,4,56,7,7,4,3,67]\n        assert organiza_por_media(p1) == [1,2,4,1,3,4,7,7,4,3,56,67]\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cd0c44ef6a9a814f4deae95a86b0f9a3",
+  "iid": 6429510702465024,
+  "activity_revision": "1.0.4"
+}

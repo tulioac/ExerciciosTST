@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "alvo = int(raw_input())\nentrada = ''\nvalores = []\ncontador = 0\nqnt_maiores = 0\n\nwhile (entrada != 'fim'):\n    entrada = raw_input()\n    qnt_maiores = 0\n    contador += 1\n    if entrada != 'fim':\n        lista = entrada.split()\n\n        for i in range(len(lista)):\n            if int(lista[i]) > alvo:\n                qnt_maiores += 1\n                \n        if qnt_maiores > len(lista)/2:\n            print \"sequencia %d: %s\" % (contador, entrada)\n\n    \n",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6ec11797f16b628ae574bc7be5494e25",
+  "iid": 5110276533780480,
+  "activity_revision": "1.0.3"
+}

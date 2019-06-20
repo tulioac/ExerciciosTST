@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "print \"Hello World!\"",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a9b15e1b1df5564307f6e32683eeffc4",
+  "iid": 5317222218072064,
+  "activity_revision": "1.1.0"
+}

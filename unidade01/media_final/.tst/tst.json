@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nmedia = float(raw_input())\nfinal = float(raw_input())\n\nmedia_final = ( media * 0.6 + final * 0.4 )\n\nprint \"M\u00e9dia final: %.1f\" % media_final",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "46d5159d6869d301b39ac889541b1308",
+  "iid": 5610169119539200,
+  "activity_revision": "1.0.1"
+}

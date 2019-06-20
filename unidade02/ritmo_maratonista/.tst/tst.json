@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "km = float(raw_input())\nmin = int(raw_input())\n\nritmo = min / km\n\nprint \"O ritmo do maratonista foi %.2f min/km.\" % ritmo",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bd3184f4376fcacc5456c515553cc6cc",
+  "iid": 5702679124770816,
+  "activity_revision": "2.1.4"
+}

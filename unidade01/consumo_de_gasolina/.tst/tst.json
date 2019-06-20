@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "pos_inicial     = float(raw_input())\nlitros_inicial  = float(raw_input())\npos_final       = float(raw_input())\nlitros_final    = float(raw_input())\n\ndist = pos_final - pos_inicial\ndelta_consumo = litros_inicial - litros_final\n\nprint '%.1f' % (dist / delta_consumo)",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "6e7da8979f50cdccd4295ab774d4f105",
+  "iid": 5784714107420672,
+  "activity_revision": "1.0.0"
+}

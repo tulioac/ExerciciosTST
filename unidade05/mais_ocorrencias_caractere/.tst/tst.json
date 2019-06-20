@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def procura_letra(palavra, letra):\n    contador = 0\n    for i in palavra:\n        if i == letra:\n            contador += 1\n    return contador\n\n\nentrada = ''\npalavras = []\nimpresso = False\n\nwhile(True):\n    entrada = raw_input()\n    if entrada != 'fim':\n        palavras.append(entrada)\n\n    else:\n        caractere = raw_input()\n        numero = int(raw_input())\n\n        for i in palavras:\n            x = procura_letra(i, caractere)\n            if x > numero:\n                impresso = True\n                print i\n\n        if impresso == False:\n            print \"Nenhuma palavra encontrada.\"\n            break\n        \n        break\n",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 20,\n      \"vhalstead\": 55.51,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1dfcc90d02ea53799320140cbc334c84",
+  "iid": 6055293624516608,
+  "activity_revision": "1.0.2"
+}

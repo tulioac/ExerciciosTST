@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "while True:\n    entrada = raw_input().split()\n    entrada[0] = float(entrada[0])\n    entrada[2] = float(entrada[2])\n\n\n    if entrada[0] == 0 and entrada[2] == 0:\n        break\n    else:\n        if entrada[1] == 'km':\n            entrada[0] *= 1000.0\n        elif entrada[1] == 'hm':\n            entrada[0] *= 100.0\n        elif entrada[1] == 'dam':\n            entrada[0] *= 10.0\n        elif entrada[1] == 'dm':\n            entrada[0] /= 10.0\n        elif entrada[1] == 'cm':\n            entrada[0] /= 100.0\n        elif entrada[1] == 'mm':\n            entrada[0] /= 1000.0\n\n        if entrada[3] == 'km':\n            entrada[2] *= 1000.0\n        elif entrada[3] == 'hm':\n            entrada[2] *= 100.0\n        elif entrada[3] == 'dam':\n            entrada[2] *= 10.0\n        elif entrada[3] == 'dm':\n            entrada[2] /= 10.0\n        elif entrada[3] == 'cm':\n            entrada[2] /= 100.0\n        elif entrada[3] == 'mm':\n            entrada[2] /= 1000.0\n\n        print \"%.2f m\" % (entrada[0] + entrada[2])",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "64ec24807bd7d4de02c01f4d108f5f15",
+  "iid": 4965682936545280,
+  "activity_revision": "1.0.0"
+}

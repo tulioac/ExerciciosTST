@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "import math\n\nraio = float(raw_input())\n\narea = math.pi * raio * raio\n\nprint \"%.2f\" % area",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a2820c29c2c1900584cde889ff39da3b",
+  "iid": 6097390209597440,
+  "activity_revision": "1.1.3"
+}

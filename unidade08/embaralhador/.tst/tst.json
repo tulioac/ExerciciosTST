@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def troca(lista, i, j):\n    lista[i], lista[j] = lista[j], lista[i]\n\ndef exibe(lista):\n    msg = ''\n    for i in range(len(lista) - 1):\n        msg += lista[i] + ' '\n    msg += lista[len(lista)-1]\n    print msg\n\ndef GE(lista):\n    for i in range(len(lista) - 2, -1, -1):\n        troca(lista, i, i-1)\n    exibe(lista)\n\ndef GD(lista):\n    for i in range(len(lista)-1):\n        troca(lista, i, i+1)\n    exibe(lista)\n\ndef I(lista):\n    for i in range(0, len(lista)-1, 2):\n        troca(lista, i, i+1)\n    exibe(lista)\n\ncartas = raw_input().split()\n\nwhile True:\n    entrada = raw_input()\n    if entrada == 'fim':\n        break\n    else:\n        if entrada.upper() == 'GE':\n            GE(cartas)\n        elif entrada.upper() == \"GD\":\n            GD(cartas)\n        elif entrada.upper() == \"I\":\n            I(cartas)    ",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9a5062a1794aaa2b6aea4353a6cdea6e",
+  "iid": 5867201470922752,
+  "activity_revision": "1.0.0"
+}

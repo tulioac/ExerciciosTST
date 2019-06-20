@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def criaSenhaFraca(palavra):\n    senha = '((' + palavra + '))'\n    print senha\n\ndef criaSenhaForte(palavra):\n    senha = ''\n    for i in range(len(palavra)):\n        if palavra[i].lower() == 'o':\n            senha += '0'\n        elif palavra[i].lower() == 'i' or palavra[i].lower() == 'l':\n            senha += '1'\n        elif palavra[i].lower() == 'e':\n            senha += '3'\n        elif palavra[i].lower() == 'a':\n            senha += '4'\n        elif palavra[i].lower() == 'b':\n            senha += '6'\n        elif palavra[i].lower() == 't':\n            senha += '7'\n        else:\n            senha += palavra[i]\n    senha = '((' + senha + '))'\n    print senha\n\nwhile True:\n    entrada = raw_input().split()\n    if entrada[0][0] == '*':\n        break\n    elif entrada[1] == 'fraco':\n        criaSenhaFraca(entrada[0])\n    elif entrada[1] == 'forte':\n        criaSenhaForte(entrada[0])",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9591eed86d6f9b14190c01f154a4cbd1",
+  "iid": 5777566073880576,
+  "activity_revision": "1.0.0"
+}

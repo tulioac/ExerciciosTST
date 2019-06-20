@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "media = float(raw_input())\nmedia_lista = media / 2 + 1\nstring = ''\nmedia_maior = media_lista\nlista = ''\nresposta = ''\n\nwhile (string != 'fim' and media_lista > (media/2)):\n    string = raw_input()\n    media_lista = 0\n\n    if string != 'fim':\n        lista = string.split()\n        for i in range(len(lista)):\n            media_lista += float(lista[i])\n        \n        media_lista /= len(lista)\n\n        #print media_lista\n\n        if media_lista > media:\n            print string\n",
+      "name": "p.py"
+    },
+    "p2.py": {
+      "category": "answer",
+      "data": "media_mensal = float(raw_input())\nmedia_atual = media_mensal\nvalor = ''\nmedia_anterior = media_atual\nlista_final = []\n\nwhile (valor != 'fim' and media_atual > media_mensal / 2):\n    media_anterior = media_atual\n    media_atual = 0\n    valor = raw_input()\n    lista = valor.split()\n    if valor != 'fim':\n        for i in range(len(lista)):\n            media_atual += float(lista[i])\n        media_atual /= len(lista)    \n   \n        if media_atual > media_anterior:\n            lista_final = valor\n\nprint lista_final\n\n        \n",
+      "name": "p2.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "eac948b3b636d8d07bce32ddb0985b96",
+  "iid": 5825602531622912,
+  "activity_revision": "1.0.1"
+}

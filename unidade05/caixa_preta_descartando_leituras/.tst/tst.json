@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nstring = ''\nvalido = True\nqnt_peso = 0\nqnt_combustivel = 0\nqnt_altitude = 0\n\nwhile (valido == True):\n    string = raw_input()\n    informacoes = string.split()\n    peso = int(informacoes[0])\n    combustivel = int(informacoes[1])\n    altitude = int(informacoes[2])\n\n    if peso >= 0:\n        qnt_peso += 1\n\n        if combustivel >= 0:\n            qnt_combustivel += 1\n\n            if altitude >= 0:\n                qnt_altitude += 1\n\n            else:\n                valido = False\n                print \"dado inconsistente. altitude negativa.\"  \n        else:\n            valido = False\n            print \"dado inconsistente. combust\u00edvel negativo.\"\n    else: \n        valido = False\n        print \"dado inconsistente. peso negativo.\"\n\nprint \"peso: %d\" % qnt_peso\nprint \"combust\u00edvel: %d\" % qnt_combustivel\nprint \"altitude: %d\" % qnt_altitude",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8acb24204739a67dd1c68b9f1e9cb59e",
+  "iid": 6324773026004992,
+  "activity_revision": "1.0.1"
+}

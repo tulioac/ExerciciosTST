@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def caixa_alta(frase):\n    frase += ' '\n    nova_frase = ''\n    for i in range(len(frase)-1):\n        if frase[i-1] == ' ' and frase[i+1] == ' ':\n            nova_frase += frase[i].lower()\n        elif frase[i-1] == ' ' and frase[i+1] != ' ':\n            nova_frase += frase[i].upper()\n        else:\n            nova_frase += frase[i]\n        \n    return nova_frase\n",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncaixa_alta = getattr(undertest, 'caixa_alta', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert caixa_alta(\"A primeira letra de cada palavra\") == \"a Primeira Letra De Cada Palavra\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a625de800ca96a4728131069364a6b7b",
+  "iid": 5775803627339776,
+  "activity_revision": "1.0.1"
+}

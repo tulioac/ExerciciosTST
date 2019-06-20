@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def cocktailSort(lista):\n    for j in range(len(lista)):\n        for i in range(len(lista)-1):\n            if lista[len(lista)-1 - i] < lista[len(lista)-2 - i]:\n                lista[len(lista)-1-i], lista[len(lista)-2 -i] = lista[len(lista)-2-i], lista[len(lista)-1-i]\n            if lista[i] > lista[i+1]:\n                lista[i], lista[i+1] = lista[i+1], lista[i]\n    return lista\n\ndef ordena(lista1, lista2):\n    nova_lista = []\n    for i in lista1:\n        nova_lista.append(i)\n    for i in lista2:\n        nova_lista.append(i)\n    cocktailSort(nova_lista)\n    return nova_lista\n",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\nimport unittest\nimport sys\nimport imp\n\nclass PublicTests(unittest.TestCase):\n\n    def test_1_base(self):\n        l1 = [8, 12, 78, 79, 511]\n        l2 = [302, 121, 8, 7]\n        assert ordena(l1, l2) == [7, 8, 8, 12, 78, 79, 121, 302, 511]\n        assert l1 == [8, 12, 78, 79, 511]\n        assert l2 == [302, 121, 8, 7]\n        \n    def test_exemplo(self):\n        assert ordena([3.9,4.0],[1.9]) == [1.9,3.9,4.0]\n\n\nif __name__ == '__main__':\n    undertest = imp.load_source(\"undertest\", sys.argv[-1])\n    ordena = undertest.ordena\n    del sys.argv[-1]\n    unittest.main()\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "bfb7004c3be2660c972535141b67de16",
+  "iid": 5872728422744064,
+  "activity_revision": "1.0.1"
+}

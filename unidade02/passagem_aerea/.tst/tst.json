@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nmilhas = float(raw_input())\naliquota = float(raw_input())\n\npassagem = milhas * aliquota + 51.0\n\nprint \"Valor da passagem: R$ %.2f\" % passagem\n\nprint\n\na_vista = passagem * 0.75\nseis_parcelas = passagem * 0.95\n\nprint \"Pagamento:\"\nprint \"1. \u00c0 vista. R$ %.2f\" % a_vista\nprint \"2. Em 6 parcelas. Total: R$ %.2f\" % seis_parcelas\nprint \"   6 x R$ %.2f\" % (seis_parcelas/6)\nprint \"3. Em 10 parcelas. Total: R$ %.2f\" % passagem\nprint \"   10 x R$ %.2f\" % (passagem/10)\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "68800a3c83f406803eb837930f06f615",
+  "iid": 4545399683547136,
+  "activity_revision": "2.0.0"
+}

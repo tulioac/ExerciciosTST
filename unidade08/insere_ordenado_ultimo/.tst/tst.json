@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def insere_ordenado_ultimo(lista):\n    for j in range(len(lista)):\n        for i in range(len(lista)-1):\n            if lista[len(lista)-1 - i] < lista[len(lista)-2 - i]:\n                lista[len(lista)-1-i], lista[len(lista)-2 -i] = lista[len(lista)-2-i], lista[len(lista)-1-i]\n            if lista[i] > lista[i+1]:\n                lista[i], lista[i+1] = lista[i+1], lista[i]",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ninsere_ordenado_ultimo = getattr(undertest, 'insere_ordenado_ultimo', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = [2,6,9,11,13,5]\n        insere_ordenado_ultimo(l1)\n        assert l1 == [2,5,6,9,11,13]\n    \n    def test_outro(self):\n        l2 = [1,2,3,0]\n        insere_ordenado_ultimo(l2)\n        assert l2 == [0,1,2,3]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "fc46f2604e1fae3ebf687f719dbfc343",
+  "iid": 5838452872445952,
+  "activity_revision": "1.0.2"
+}

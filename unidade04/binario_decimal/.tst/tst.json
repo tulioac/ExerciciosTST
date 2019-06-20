@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "binario = raw_input()\n\nmsg = ''\nsaida = []\ndecimal = 0\nfor i in range(len(binario)-1, -1, -1):\n    potencia = 2**(len(binario)-i-1)\n    valor = int(binario[i]) * potencia\n    msg = \"%s * %d = %d\" % (binario[i], potencia, valor)\n    saida.append(msg)\n    if valor != 0:\n        decimal += valor\n\nfor i in range(len(saida)-1, -1, -1):\n    print saida[i]\n\nprint \"%s(2) = %d(10)\" % (binario, decimal)\n    ",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 89.21,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "31af70a204d0107f14d26782df77fa93",
+  "iid": 5325481272410112,
+  "activity_revision": "1.0.4"
+}

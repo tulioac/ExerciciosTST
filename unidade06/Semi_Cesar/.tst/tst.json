@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "from string import ascii_lowercase\n\ndef cesar(msg, d):\n    nova_palavra = ''\n    for i in range(len(msg)):\n        achou = False\n        for j in range(len(ascii_lowercase)):\n            if msg[i] == ascii_lowercase[j]:\n                nova_palavra += ascii_lowercase[(j+d) % 26]\n                achou = True\n        if achou == False:\n            nova_palavra += msg[i]\n    return nova_palavra",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncesar = getattr(undertest, 'cesar', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        assert cesar(\"exemplo\", 4) == \"ibiqtps\"\n    \n    def test_exemplo_2(self):\n        assert cesar(\"Exemplo 2!\", 4) == \"Ebiqtps 2!\"\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b3f5eaa5c943cb7710b6723778e5992a",
+  "iid": 6454021476843520,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nbase = int(raw_input())\naltura = int(raw_input())\n\nperimetro = 2.0*(base/10.0 + altura/10.0)\n\nprint 'O per\u00edmetro resultante (em cm) \u00e9 %.2f.' % perimetro",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1be8971b1692a923218379ddf0e88de8",
+  "iid": 5921598339022848,
+  "activity_revision": "1.0.1"
+}

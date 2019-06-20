@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "s0 = float(raw_input())\nv = float(raw_input())\nt = float(raw_input())\n\nst = s0 + v*t\n\nprint \"%.2f\" % st",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "45cfc3eec62b6eba9419aae333a669b7",
+  "iid": 4542281503735808,
+  "activity_revision": "1.1.1"
+}

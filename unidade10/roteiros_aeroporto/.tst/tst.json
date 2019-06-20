@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def meuIn(elemento, lista):\n    for i in lista:\n        if i == elemento:\n            return True\n    return False\n\ndef meuSplit(string):\n    lista = []\n    caracteres = ''\n    for i in string:\n        if i != '/':\n            caracteres += i\n        else:\n            lista.append(caracteres)\n            caracteres = ''\n    if caracteres != '':\n        lista.append(caracteres)\n    return lista\n\ndef eh_roteiro(iata, voos, roteiro):\n    roteiro = meuSplit(roteiro)\n    for i in range(len(roteiro)):\n        roteiro[i] = iata[roteiro[i]]\n\n    viagem_possivel = True\n    for i in range(len(roteiro)-1):\n        if not meuIn(roteiro[i+1], voos[roteiro[i]]):\n            viagem_possivel = False\n    \n    return viagem_possivel\n\n\n\n\n\niata = {\"Campina Grande\": \"CPV\",\n       \"Recife\": \"REC\",\n       \"Salvador\": \"SSA\",\n       \"Brasilia\": \"BSB\",\n       \"Sao Paulo\": \"GRU\",\n       \"Rio de Janeiro\": \"GIG\"}\n\n\nvoos = {\"CPV\": [\"REC\", \"SSA\"],\n       \"REC\": [\"CPV\", \"BSB\", \"GRU\", \"GIG\"],\n       \"SSA\": [\"REC\", \"GRU\", \"GIG\"],\n       \"BSB\": [\"CPV\", \"GIG\", \"GRU\"],\n       \"GRU\": [\"GIG\", \"BSB\"],\n       \"GIG\": [\"GRU\", \"REC\"]}\n\nprint eh_roteiro(iata, voos, \"Recife/Rio de Janeiro/Salvador/Recife\")",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\neh_roteiro = getattr(undertest, 'eh_roteiro', None)\n\nclass AcceptanceTests(unittest.TestCase):\n\n    def teste_exemplo(self):\n        iata = {\"Campina Grande\": \"CPV\",\n               \"Recife\": \"REC\",\n               \"Salvador\": \"SSA\",\n               \"Brasilia\": \"BSB\",\n               \"Sao Paulo\": \"GRU\",\n               \"Rio de Janeiro\": \"GIG\"}\n\n\n        voos = {\"CPV\": [\"REC\", \"SSA\"],\n               \"REC\": [\"CPV\", \"BSB\", \"GRU\", \"GIG\"],\n               \"SSA\": [\"REC\", \"GRU\", \"GIG\"],\n               \"BSB\": [\"CPV\", \"GIG\", \"GRU\"],\n               \"GRU\": [\"GIG\", \"BSB\"],\n               \"GIG\": [\"GRU\", \"REC\"]}\n\n\n        assert eh_roteiro(iata, voos, \"Campina Grande/Recife/Rio de Janeiro\")\n        assert eh_roteiro(iata, voos, \"Sao Paulo/Rio de Janeiro/Recife/Brasilia\")\n        assert not eh_roteiro(iata, voos, \"Recife/Rio de Janeiro/Salvador/Recife\")\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "55a77be9458fc6de42ee1df924d0a883",
+  "iid": 5894281239724032,
+  "activity_revision": "1.0.0"
+}

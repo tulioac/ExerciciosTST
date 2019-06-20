@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def tem_afinidade(l1, l2):\n    contador = 0\n\n    for i in l1:\n        for j in l2:\n            if j == i:\n                contador += 1\n\n    if contador > 2:\n        return True\n    else:\n        return False",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ntem_afinidade = getattr(undertest, 'tem_afinidade', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        l1 = ['zeze', 'bruno e marrone', 'joao', 'pedro', 'u2']\n        l2 = ['zeze', 'joao', 'u2', 'jquest']\n        assert tem_afinidade(l1, l2) == True\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "849d340f690743d7a47f5d7a716567fd",
+  "iid": 5860548600135680,
+  "activity_revision": "1.0.1"
+}

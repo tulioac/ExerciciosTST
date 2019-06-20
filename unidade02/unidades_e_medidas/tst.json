@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "100\n",
+      "output": "Jardas: 109.361 yd\nPés: 328.084 ft\nPolegadas: 3937.008 in\n"
+    }
+  ]
+}

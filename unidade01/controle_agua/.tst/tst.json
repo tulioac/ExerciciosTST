@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nimport math\n\nvelocidade_de_vazao = float(raw_input())\ndiametro = float(raw_input())\ntempo = int(raw_input())\n\nseccao = (math.pi * diametro**2) / 4\nvazao = velocidade_de_vazao * seccao * 1000                                       #em segundos\nquantidade_de_agua = tempo * vazao\nprint \"Quantidade de \u00e1gua =\", quantidade_de_agua, \"litros.\"\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "88fef214eed2eca4c3581c85b060a382",
+  "iid": 5299349449867264,
+  "activity_revision": "1.0.1"
+}

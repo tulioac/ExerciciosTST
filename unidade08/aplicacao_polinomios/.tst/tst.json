@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "entrada = ''\ncoeficientes = []\nwhile True:\n    valor_da_funcao = 0\n    entrada = raw_input()\n    if entrada == 'fim':\n        break\n    else:\n        valores = entrada.split()\n        if len(valores) > 1:\n            print \"novo polinomio\"\n            coeficientes = []\n            for i in range(1, len(valores)):\n                coeficientes.append(int(valores[i]))\n        else:\n            for i in range(len(coeficientes)):\n                valor_da_funcao += coeficientes[i]*int(valores[0])**i\n            print valor_da_funcao",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3c23e7515f0aff3742b58aadb2aee135",
+  "iid": 6659888352591872,
+  "activity_revision": "1.0.1"
+}

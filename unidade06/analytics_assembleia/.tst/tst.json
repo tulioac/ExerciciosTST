@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ndef split(palavra):\n    var = ''\n    lista = []\n    for i in range(len(palavra)):\n        if palavra[i] != \",\":\n            var += palavra[i]\n        else:\n            lista.append(var)\n            var = ''\n    if var != '':\n        lista.append(var)\n    return lista\n\ndef conta_votos(votacoes, id_votacao):\n    qnt_sim = 0\n    qnt_nao = 0\n    voto = ''\n    for i in range(len(votacoes)):\n        informacoes = split(votacoes[i])\n        voto = informacoes[1] \n        id_voto = informacoes[2]\n        if informacoes[1] == 'sim' and int(id_voto) == int(id_votacao):\n            qnt_sim += 1\n        elif informacoes[1] == 'nao' and int(id_voto) == int(id_votacao):\n            qnt_nao += 1\n\n    resposta = [qnt_sim, qnt_nao]\n    return resposta    \n\nvotacao = []\nvotacao.append('greve geral,sim,543,joao,servidor')\nvotacao.append('greve geral,nao,543,marina,servidor')\nvotacao.append('indicativo de greve,sim,5,joao,professor')\nvotacao.append('paralisa\u00e7\u00e3o,nao,543,julio,professor')\nvotacao.append('paralisa\u00e7\u00e3o,sim,543,carlos,professor')\nvotacao.append('paralisa\u00e7\u00e3o,sim,543,juliana,professor')\nvotacao.append('lei 1329,sim,99,joao,servidor')\n\nconta_votos(votacao, 543)",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\n# coding: utf-8\nimport unittest\nimport sys\nimport imp\n\nclass PublicTests(unittest.TestCase):\n\n    def test_simples(self):\n        votacao = []\n        votacao.append('uma,sim,543,joao,PPPP')\n        assert conta_votos(votacao, 543) == [1,0]\n\n    def test_exemplo(self):\n        votacao = []\n        votacao.append('uma,sim,543,joao,PPPP')\n        votacao.append('uma,nao,543,marina,PPPP')\n        votacao.append('uma,sim,5,joao,PPPP')\n        votacao.append('uma,nao,543,julio,P')\n        votacao.append('uma,sim,543,carlos,PBBBB')\n        votacao.append('uma,sim,543,juliana,PP')\n        votacao.append('uma,sim,99,joao,PPPP')\n\n        assert conta_votos(votacao, 543) == [3,2]\n\nif __name__ == '__main__':\n\n    undertest = imp.load_source(\"undertest\", sys.argv[-1])\n    conta_votos = undertest.conta_votos\n    del sys.argv[-1]\n    unittest.main()\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "665fbb7495b74976c5ef4a62e78ae9c1",
+  "iid": 5864396186189824,
+  "activity_revision": "1.0.0"
+}

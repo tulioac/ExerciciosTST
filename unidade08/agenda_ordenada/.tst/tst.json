@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def ordena(lista):\n    for j in range(len(lista)):\n        for i in range(len(lista)-1):\n            if lista[len(lista)-1 -i] < lista[len(lista)-2 -i]:\n                lista[len(lista)-1 -i], lista[len(lista)-2 -i] = lista[len(lista)-2 -i], lista[len(lista)-1 -i]\n            if lista[i] > lista[i+1]:\n                lista[i], lista[i+1] = lista[i+1], lista[i]\n    return lista\n\nentrada = ''\nagenda = []\nwhile True:\n    entrada = raw_input()\n    if entrada == '####':\n        break\n    else:\n        agenda.append(entrada)\n        ordena(agenda)\n        for i in agenda:\n            if entrada == i:\n                print \"* %s\" % i\n            else:\n                print i\n        print 4*'-'\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0da1fb542e65dcaa3439faa80bdad6d2",
+  "iid": 6452002473115648,
+  "activity_revision": "1.0.0"
+}

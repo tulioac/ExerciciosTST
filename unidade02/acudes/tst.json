@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "411686287\n5.5\n85000\n",
+      "name": "test_name",
+      "output": "capacidade? percentual hoje? gasto diário? volume: 22642745.79\ndias restantes: 266\n",
+      "type": "io"
+    },
+    {
+      "category": "public",
+      "input": "411686287\n5.5\n55000\n",
+      "name": "test_name",
+      "output": "capacidade? percentual hoje? gasto diário? volume: 22642745.79\ndias restantes: 411\n",
+      "type": "io"
+    }
+  ]
+}

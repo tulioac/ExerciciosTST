@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "100\n9\n4\n",
+      "output": "Clientes no atacado = 11kg cada.\nClientes no varejo = 0.25kg cada.\n"
+    },
+    {
+      "category": "public",
+      "input": "216\n7\n5\n",
+      "output": "Clientes no atacado = 30kg cada.\nClientes no varejo = 1.20kg cada.\n",
+      "type": "io"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nimport math\nlado = float(raw_input())\n\nraio = math.sqrt(2) * lado / 2\n\nperimetro = 2 * math.pi * raio\n\narea = math.pi * raio * raio\n\nprint \"Per\u00edmetro: %.5f\" % perimetro\nprint \"\u00c1rea: %.5f\" % area\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3b9d9ada421dfe5abf29ef0e8944d8bb",
+  "iid": 6214801931894784,
+  "activity_revision": "1.1.1"
+}

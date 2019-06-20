@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Antonio\n15\n678.00\n20.00\n",
+      "output": "O Salário Bruto de Antonio é de R$ 3012.00\nO Salário Líquido de Antonio é de R$ 2048.16\n"
+    }
+  ]
+}

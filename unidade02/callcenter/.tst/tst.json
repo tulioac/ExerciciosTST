@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ntotal = 0\n\nfor i in range (7):\n    valor = int(raw_input())\n    total += valor\n\nprint \"Total: %d\" % total\nmedia = total / 7.0\n\nprint \"M\u00e9dia: %.2f\" % media",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "606534306706563d73543d2a9228da09",
+  "iid": 5374870477078528,
+  "activity_revision": "1.0.3"
+}

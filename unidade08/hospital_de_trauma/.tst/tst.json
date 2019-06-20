@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nnomes_cores = [\"vermelho\", \"laranja\", \"amarelo\", \"verde\", \"azul\"]\nprioridade_cores = {\"vermelho\": 4, \"laranja\": 3, \"amarelo\": 2, \"verde\": 1,  \"azul\": 0}\ncores = [0, 0, 0, 0, 0]\n\n\ndef resumo():\n    print '-'*3\n    for i in range(len(cores)):\n        print \"%s: %d\" % (nomes_cores[i], cores[i])\n    print '-'*3\n\n\ndef troca(lista, i, j):\n    lista[i], lista[j] = lista[j], lista[i]\n\n\ndef cadastra(pessoas, nome, prioridade):\n    pessoas.append([nome, prioridade])\n    for i in range(len(pessoas)-1):\n        for k in range(len(pessoas)-1):\n            if prioridade_cores[pessoas[k][1]] < prioridade_cores[pessoas[k+1][1]]:\n                troca(pessoas, k, k+1)\n\ndef exibe_ordem(lista):\n    for i in range(len(lista)):\n        print lista[i][0]\n\npacientes = []\nwhile True:\n    entrada = raw_input().split()\n    if entrada[0] == 'fim':\n        exibe_ordem(pacientes)\n        resumo()\n        break\n\n    else:\n        cadastra(pacientes, entrada[0], entrada[1])\n        if entrada[1] == nomes_cores[0]:\n            cores[0] += 1\n        elif entrada[1] == nomes_cores[1]:\n            cores[1] += 1\n        elif entrada[1] == nomes_cores[2]:\n            cores[2] += 1\n        elif entrada[1] == nomes_cores[3]:\n            cores[3] += 1\n        elif entrada[1] == nomes_cores[4]:\n            cores[4] += 1\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "88edc9b8fa7c9d3b69c8d2bade69b69b",
+  "iid": 6455714499264512,
+  "activity_revision": "1.0.1"
+}

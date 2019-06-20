@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "C1 7\nE127 7\n***\n",
+      "output": "00000111\n10000110\n"
+    },
+    {
+      "category": "public",
+      "input": "C1 5\n***\n",
+      "output": "00000101\n"
+    }
+  ]
+}

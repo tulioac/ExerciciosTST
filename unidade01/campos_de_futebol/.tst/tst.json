@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# C\u00e1lculo de Campos de Futebol\n\narea = [float(raw_input()), float(raw_input()), float(raw_input())]\n\ncampos = [area[0] / 4000, area[1] / 4000, area[2] / 4000]\nmedia = (campos[0] + campos[1] + campos[2])/3\n\nprint \"%.2f\\n%.2f\\n%.2f\" % (campos[0], campos[1], campos[2])\nprint \"%.2f\" % media",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "faf40c537b74d6fc412227369da8eed1",
+  "iid": 4966437944819712,
+  "activity_revision": "1.0.1"
+}

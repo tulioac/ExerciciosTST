@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nlado1 = float(raw_input())\nlado2 = float(raw_input())\n\ncasa = float(raw_input())\n\narea = lado1 * lado2\n\nqnt = int(area / casa)\n\nprint \"%d casa(s) pode(m) ser constru\u00edda(s) no terreno.\" % qnt\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c0d9412de2927c96811dfe3055170bde",
+  "iid": 6404559962374144,
+  "activity_revision": "1.1.0"
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ncusto = float(raw_input())\ndespesas = float(raw_input())\nlucro = float(raw_input())\nimpostos = float(raw_input())\ncomissoes = float(raw_input())\ndescontos = float(raw_input())\nencargos = float(raw_input())\n\nvenda = custo * (despesas + lucro + 100) / (100 - impostos - comissoes - descontos - encargos)\n\nprint \"Pre\u00e7o de venda \u00e9 R$ %.2f (R$ %.2f + R$ %.2f)\" % (venda, int(venda), venda - int(venda))\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "00ea6585b4edf31451db030ed97b8098",
+  "iid": 6342220055576576,
+  "activity_revision": "1.1.0"
+}

@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "123\n345\n567\n",
+      "name": "test_exemplo1",
+      "output": "123.345.567-18\n",
+      "type": "io"
+    },
+    {
+      "category": "public",
+      "input": "123\n345\n501\n",
+      "name": "test_exemplo2",
+      "output": "123.345.501-06\n",
+      "type": "io"
+    }
+  ]
+}

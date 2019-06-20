@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# \u00c1rea de uma esfera\nimport math\n\nraio = float(raw_input())\narea = 4/3.0 * math.pi * raio ** 3\n\nprint '%.2f' % area\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "122e0151ff2aa26fa8f4d0160421f94b",
+  "iid": 5874821514657792,
+  "activity_revision": "1.0.0"
+}

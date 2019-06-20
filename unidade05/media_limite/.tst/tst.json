@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\nvalores = []\nwhile (True):\n    valor = raw_input()\n    if valor != '-':\n        valores.append(float(valor))\n    else:\n        break\n\nmedia_limite = float(raw_input())\nsoma = 0\nmedia = 0\nachou = False\n\nfor i in range(len(valores)):\n    if achou == False:\n        soma += valores[i]\n        media = soma / (i+1)\n        if media > media_limite:\n            print \"media = %.1f\" % media\n            print \"num = %d\" % (i + 1)\n            achou = True\n\nif achou == False:\n    print \"limite n\u00e3o alcan\u00e7ado\"\n",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 1,\n      \"lloc\": 17,\n      \"vhalstead\": 98.1,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c3416a89aef01c4b36b10ecc4e07f83a",
+  "iid": 6361700349509632,
+  "activity_revision": "1.0.3"
+}

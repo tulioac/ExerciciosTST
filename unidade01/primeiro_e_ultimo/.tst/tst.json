@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "valor = int(raw_input())\n\nprimeiro = valor / 1000 % 100\n\nultimo = valor % 10\n\nprint primeiro, ultimo",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8a938e65712395138dfd0419d002ebba",
+  "iid": 6605218720514048,
+  "activity_revision": "1.0.2"
+}

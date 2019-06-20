@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "milhas = float(raw_input())\nlibras = float(raw_input())\ngaloes = float(raw_input())\n\nkm = milhas * 1.60934\nkg = libras *  0.453592\nlitros = galoes * 3.78541 \n\nprint km , kg , litros",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9ece7426bc307359febf2f37df2061c2",
+  "iid": 5867854071070720,
+  "activity_revision": "1.0.0"
+}

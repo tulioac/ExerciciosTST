@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nvalor_total = float(raw_input())\ndata = raw_input()\nquantidade_de_produtos = int(raw_input())\n\nmedia = valor_total / quantidade_de_produtos\n\nprint 'Data: %s' % data\nprint 'O valor total da compra foi de R$ %.2f. A m\u00e9dia do pre\u00e7o dos produtos \u00e9 de %.1f.' % (valor_total, media)\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9c4d1f7769e4064e3d465d6cceecca47",
+  "iid": 5311871561236480,
+  "activity_revision": "1.1.1"
+}

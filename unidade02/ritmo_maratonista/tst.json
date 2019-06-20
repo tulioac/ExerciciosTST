@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "10.0\n60\n",
+      "output": "O ritmo do maratonista foi 6.00 min/km.\n"
+    },
+    {
+      "category": "public",
+      "input": "42.2\n180\n",
+      "output": "O ritmo do maratonista foi 4.27 min/km.\n"
+    }
+  ]
+}

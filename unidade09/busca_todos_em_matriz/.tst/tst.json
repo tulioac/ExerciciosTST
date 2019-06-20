@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def busca_matriz(m, e): \n    posicoes = []\n\n    for coluna in range(len(m[0])):\n        for linha in range(len(m)):\n            if m[linha][coluna] == e:\n                posicoes.append((linha, coluna))\n    return posicoes\n",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nbusca_matriz = getattr(undertest, 'busca_matriz', None)\n\nclass PublicTests(unittest.TestCase):\n    def test_exemplo_1(self):\n        matriz = [\n            [2, 3, 5, 3, 1],\n            [3, 2, 1, 5, 6],\n            [1, 2, 3, 2, 1],\n        ]\n        assert busca_matriz(matriz, 4) == []\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3fcaaf9d987a3d8557719c2b54983c62",
+  "iid": 5876136479293440,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nmedia = 0\nvalor = 0 \ncontador = 0\nsoma = 0\n\nwhile (valor >= media):\n    contador += 1\n    valor = float(raw_input())\n    if valor >= media:\n        soma += valor\n        media = soma / contador\n\nprint \"Saldo total do FIS: R$%.2f.\" % soma\nprint \"M\u00e9dia das contribui\u00e7\u00f5es: R$%.2f.\" % media\n        ",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 62.27,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "465166d85a2cfa0bb1ac9d186d1b8dcd",
+  "iid": 5673226487201792,
+  "activity_revision": "1.0.1"
+}

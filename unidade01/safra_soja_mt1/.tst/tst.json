@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "soja = int(raw_input())\n\natacado = int(raw_input())\nvarejo = int(raw_input())\n\nqnt_atacado = float(soja / atacado)\nqnt_varejo = float((soja - qnt_atacado*atacado) / varejo)\n\nprint \"Clientes no atacado = %dkg cada.\" % qnt_atacado\nprint \"Clientes no varejo = %.2fkg cada.\" % qnt_varejo",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "051cedbbae0746601dd8506e234389b4",
+  "iid": 5374869537554432,
+  "activity_revision": "1.1.0"
+}

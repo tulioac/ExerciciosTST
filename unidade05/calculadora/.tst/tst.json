@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nstring = ''\nvalido = True\n\nwhile (valido):\n    string = raw_input()\n    informacoes = string.split()\n\n    operacao = int(informacoes[0])\n    if operacao != 5:\n        digito_1 = int(informacoes[1])\n        digito_2 = int(informacoes[2])\n\n        if operacao == 1:\n            print \"%d\" % (digito_1 + digito_2)\n        \n        elif operacao == 2:  \n            print \"%d\" % (digito_1 - digito_2)\n\n        elif operacao == 3:\n            print \"%d\" % (digito_1 * digito_2)\n\n        elif operacao == 4 and digito_2 != 0:\n            print \"%d\" % (digito_1 / digito_2)\n\n        elif digito_2 == 0:\n            print \"Erro: Divis\u00e3o por 0\"\n            valido = False\n    else:\n        valido = False\n\n",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 0,\n      \"lloc\": 16,\n      \"vhalstead\": 213.67,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "d59b56290527f0087a0efae14c2f5f5a",
+  "iid": 4972243029327872,
+  "activity_revision": "1.0.2"
+}

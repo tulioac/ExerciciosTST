@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "limite = int(raw_input())\ncontador = 0\nvalor = 0\n\nwhile(True):\n    contador += 1\n    valor = contador * 10\n    if valor >= limite:\n        break\n    print valor\n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a56f7c0a00f7d351ab69c98f744f7715",
+  "iid": 5748406198730752,
+  "activity_revision": "1.0.1"
+}

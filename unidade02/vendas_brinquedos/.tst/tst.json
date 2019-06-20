@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "total = int(raw_input())\nteresa = int(raw_input())\ncarla = int(raw_input())\njoaquim = total - (teresa + carla)\n\npercent_teresa = 100.0 * teresa / total\npercent_joaquim = 100.0 * joaquim / total\npercent_carla = 100.0 * carla / total\n\nprint \"Teresa vendeu %d (de %d) brinquedos. (%.2f%%)\" % (teresa, total, percent_teresa)\nprint \"Joaquim vendeu %d (de %d) brinquedos. (%.2f%%)\" % (joaquim, total, percent_joaquim)\nprint \"Carla vendeu %d (de %d) brinquedos. (%.2f%%)\" % (carla, total, percent_carla)\n\n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "842b18c926e7e4f7c3e725ab7955a564",
+  "iid": 4832325913280512,
+  "activity_revision": "1.0.0"
+}

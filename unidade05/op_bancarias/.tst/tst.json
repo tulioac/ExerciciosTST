@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "entrada = raw_input()\ninfo = entrada.split()\n\nnome = info[0]\nsaldo_inicial = float(info[1])\n\nwhile (True):\n    entrada = raw_input()\n    info = entrada.split()\n\n    operacao = int(info[0])\n\n    if operacao == 1:\n        valor = float(info[1])\n        saldo_inicial -= valor\n    elif operacao == 2:\n        valor = float(info[1])\n        saldo_inicial += valor\n    elif operacao == 3:\n        print \"Saldo de R$ %.2f na conta de %s\" % (saldo_inicial, nome)\n        break\n",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 4,\n      \"pep8\": 0,\n      \"lloc\": 13,\n      \"vhalstead\": 55.51,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "07f4e2c14f9364d0ef188ab67d4cd0af",
+  "iid": 5840210789138432,
+  "activity_revision": "1.0.2"
+}

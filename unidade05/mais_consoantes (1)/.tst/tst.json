@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "letras_vogais = ['a', 'A', 'e', 'E', \n          'i', 'I', 'o', 'O', \n          'u', 'U']\n\ndef conta_vogais(palavra):\n    contador = 0\n    for i in palavra:\n        for j in letras_vogais:\n            if i == j:\n                contador += 1\n    return contador\n        \n\ncontador = 0\n\nwhile(True):\n    contador += 1\n    entrada = raw_input()\n    vogais = conta_vogais(entrada)\n    consoantes = len(entrada) - vogais\n    if consoantes > vogais:\n        break\n\nprint contador",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 1,\n      \"lloc\": 16,\n      \"vhalstead\": 257.47,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "30e2d53aa98b3aa3cf7d2e2793f488a6",
+  "iid": 6753496124620800,
+  "activity_revision": "1.0.1"
+}

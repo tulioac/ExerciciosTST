@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def agrupa_negativos(lista):\n    dic = {\"nao-negativos\":[], \"negativos\":[]}\n\n    for i in lista:\n        if i < 0:\n            dic[\"negativos\"].append(i)\n        else:\n            dic[\"nao-negativos\"].append(i)\n    return dic\n\nprint agrupa_negativos([10, -2, -7, 8])\n",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nagrupa_negativos = getattr(undertest, 'agrupa_negativos', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_example(self):\n        assert agrupa_negativos([10, -2, -7, 8]) == {\"nao-negativos\":[10, 8], \"negativos\":[-2,-7]}\n        assert agrupa_negativos([-1, -5]) == {\"nao-negativos\":[ ], \"negativos\":[-1, -5]}\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "12e80546007c9a07cfc3a7741a092d99",
+  "iid": 6416781895794688,
+  "activity_revision": "1.0.0"
+}

@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "triângulo\n3.0\n8.0\n",
+      "output": "Área do triângulo: 12.00 (cm2)\n"
+    },
+    {
+      "category": "public",
+      "input": "círculo\n2\n",
+      "output": "Área do círculo: 12.57 (cm2)\n"
+    }
+  ]
+}

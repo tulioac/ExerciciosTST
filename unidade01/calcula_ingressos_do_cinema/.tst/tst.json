@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "adultos = float(raw_input())\ncriancas = float(raw_input())\ncinema = float(raw_input())\n\ntotal = criancas * cinema / 2 + adultos * cinema\n\nprint \"Total: R$\" , str(total)\n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "789036301c60cf78007cfbdd6125762b",
+  "iid": 5551882319691776,
+  "activity_revision": "1.0.0"
+}

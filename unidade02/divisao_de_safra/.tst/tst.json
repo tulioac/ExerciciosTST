@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "quant = float(raw_input())\n\natacado = int(raw_input())\nvarejo = int(raw_input())\n\nqnt_a = quant / atacado\nqnt_v = float(quant % atacado / varejo)\n\nprint \"Clientes no atacado = %dkg cada.\" % qnt_a\nprint \"Clientes no varejo = %.2fkg cada.\" % qnt_v",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "eb0a3fb4485b28f459b1e10d0e7b618c",
+  "iid": 5055564992217088,
+  "activity_revision": "1.1.0"
+}

@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "240\n80\n80\n",
+      "output": "Teresa vendeu 80 (de 240) brinquedos. (33.33%)\nJoaquim vendeu 80 (de 240) brinquedos. (33.33%)\nCarla vendeu 80 (de 240) brinquedos. (33.33%)\n"
+    }
+  ]
+}

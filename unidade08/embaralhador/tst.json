@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "A 2 3 4 5\nI\nfim\n",
+      "output": "2 A 4 3 5\n"
+    },
+    {
+      "category": "public",
+      "input": "K 2 7\nGD\nGD\nGE\nfim\n",
+      "output": "2 7 K\n7 K 2\n2 7 K\n"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ninverte_dicionario = getattr(undertest, 'inverte_dicionario', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        m = {\"a\": 2, \"b\": 3, \"c\": 2}\n        assert inverte_dicionario(m) == {\n          2: [\"a\", \"c\"],\n          3: [\"b\"]\n        }\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "p.py": {
+      "category": "answer",
+      "data": "def cocktailSort(lista):\n    for j in range(len(lista)):\n        for i in range(len(lista)-1):\n            if lista[len(lista)-1 - i] < lista[len(lista)-2 - i]:\n                lista[len(lista)-1-i], lista[len(lista)-2 -i] = lista[len(lista)-2-i], lista[len(lista)-1-i]\n            if lista[i] > lista[i+1]:\n                lista[i], lista[i+1] = lista[i+1], lista[i]\n    return lista\n\n\ndef inverte_dicionario(dic):\n    inv_dic = {}\n    for chave, valor in dic.iteritems():\n        inv_dic[valor] = inv_dic.get(valor, [])\n        inv_dic[valor].append(chave)\n\n    for chave in inv_dic:\n        inv_dic[chave] = cocktailSort(inv_dic[chave])\n     \n    return inv_dic\n\n\nm = {\"a\": 2, \"b\": 3, \"c\": 2}\ninverte_dicionario(m)",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "23a3bb711ea887a63e2423d3dbfeb113",
+  "iid": 5795319824515072,
+  "activity_revision": "1.1.0"
+}

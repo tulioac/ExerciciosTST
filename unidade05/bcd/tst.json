@@ -1,0 +1,20 @@
+{
+  "ignore": [
+    "public_tests.py",
+    "acceptance_tests.py"
+  ],
+  "tests": [
+    {
+      "category": "public",
+      "input": "11110101\nfim\n",
+      "name": "exemplo1",
+      "output": "BCD inválido.\n"
+    },
+    {
+      "category": "public",
+      "input": "1111\nfim\n",
+      "name": "exemplo2",
+      "output": "Tente novamente.\n"
+    }
+  ]
+}

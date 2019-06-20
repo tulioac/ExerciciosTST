@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "m = int(raw_input())\nkm = m / 1000.0\n\nprint \"%d m = %.2f km\" % (m, km)",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "634deeb6d8af8b9a946f77555b12eff2",
+  "iid": 4650282784915456,
+  "activity_revision": "1.1.1"
+}

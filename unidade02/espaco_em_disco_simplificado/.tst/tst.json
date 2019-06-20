@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnome1 = raw_input()\nespaco1 = float(raw_input())\n\nnome2 = raw_input()\nespaco2 = float(raw_input())\n\nnome3 = raw_input()\nespaco3 = float(raw_input())\n\nprint \"SPLab - Espa\u00e7o utilizado pelos usu\u00e1rios\"\nprint '-'*45\nprint \"Nr., Usu\u00e1rio, Espa\u00e7o Utilizado\"\n\nprint\n\ntamanho1 = espaco1 / (1024 * 1024)\ntamanho2 = espaco2 / (1024 * 1024)\ntamanho3 = espaco3 / (1024 * 1024)\n\nprint \"1, %s, %.2f MB\" % (nome1, tamanho1)\nprint \"2, %s, %.2f MB\" % (nome2, tamanho2)\nprint \"3, %s, %.2f MB\" % (nome3, tamanho3)\n\nprint\n\nprint \"Espa\u00e7o total ocupado: %.2f MB\" % (tamanho1 + tamanho2 + tamanho3)\nprint \"Espa\u00e7o m\u00e9dio ocupado: %.2f MB\" % ((tamanho1 + tamanho2 + tamanho3)/3)\n\n\n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cb48b74b50214b5d5102bd814c49620a",
+  "iid": 6631509859500032,
+  "activity_revision": "1.1.0"
+}

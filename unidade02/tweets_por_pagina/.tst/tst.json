@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nqnt_tweets = int(raw_input())\n\npaginas = qnt_tweets / 400\n\nperdidos = qnt_tweets - paginas * 400\nperc_perdidos = perdidos * 100.0 / qnt_tweets\n\nprint \"Ser\u00e3o necess\u00e1rias %d p\u00e1gina(s) para visualizar os tweets.\" % paginas\nprint \"%.1f%% dos tweets ser\u00e3o perdidos.\" % perc_perdidos",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7f72497d77e54d4f2bcab70e6f1c9ba1",
+  "iid": 4829327321464832,
+  "activity_revision": "1.1.1"
+}

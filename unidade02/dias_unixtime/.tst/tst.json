@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "segundos = int(raw_input())\n\ndias = segundos / (3600 * 24) \n\nprint dias",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "98295446af59cd9adc26cf71101d0188",
+  "iid": 4584265178152960,
+  "activity_revision": "1.1.0"
+}

@@ -1,0 +1,11 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "6000\n5\n",
+      "name": "test_name",
+      "output": "0.5 kWh\n",
+      "type": "io"
+    }
+  ]
+}

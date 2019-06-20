@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "num1 = int(raw_input())\nnum2 = int(raw_input())\nnum3 = int(raw_input())\n\ndig1 = num1 % 11\ndig2 = num2 % 11\ndig3 = num3 % 11\n\nprint \"%02d-%02d-%02d\" % (dig1, dig2, dig3)",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ccb202acf4b84aab01a06493ca955ce5",
+  "iid": 6014789398560768,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "100\n3\n",
+      "name": "exemplo",
+      "output": "Reais? Cotação? Conversão: $ 300.0\n"
+    }
+  ]
+}

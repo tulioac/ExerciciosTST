@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "2000\n1800\n1600\n2100\n1500\n1300\n1000\n",
+      "output": "Total: 11300\nMédia: 1614.29\n"
+    }
+  ]
+}

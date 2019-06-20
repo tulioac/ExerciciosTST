@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def eh_quadrado_magico(quadrado):\n    soma_linhas = [0] * len(quadrado)\n    soma_colunas = [0] * len(quadrado[0])\n    soma_diagonais = [0, 0]\n\n    for linha in range(len(quadrado)):\n        for coluna in range(len(quadrado[0])):\n            soma_linhas[linha] += quadrado[linha][coluna]\n\n    for coluna in range(len(quadrado[0])):\n        for linha in range(len(quadrado)):\n            soma_colunas[coluna] += quadrado[linha][coluna]\n\n    for i in range(len(quadrado)):\n        print quadrado[i][i]\n        soma_diagonais[0] += quadrado[i][i]\n\n    k = len(quadrado)\n    for i in range(len(quadrado)):\n        k -= 1\n        soma_diagonais[1] += quadrado[i][k]\n\n    print soma_colunas\n    print soma_linhas\n    print soma_diagonais    \n\n    condicao_linhas = True\n    for i in range(len(soma_linhas) - 1):\n        if soma_linhas[i] != soma_linhas[i+1]:\n            condicao_linhas = False\n\n    condicao_colunas = True\n    for i in range(len(soma_colunas) - 1):\n        if soma_colunas[i] != soma_colunas[i+1]:\n            condicao_colunas = False\n\n    condicao_diagonais = True\n    for i in range(len(soma_diagonais) - 1):\n        if soma_diagonais[i] != soma_diagonais[i+1]:\n            condicao_diagonais = False\n\n    return condicao_linhas and condicao_colunas and condicao_diagonais\n\nquadrado1 = [[2,7,6],[9,5,1],[1,3,8]]\nquadrado2 = [[1,2,3],[4,5,6]]\n\nprint eh_quadrado_magico(quadrado1)\nprint eh_quadrado_magico(quadrado2)",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\neh_quadrado_magico = getattr(undertest, 'eh_quadrado_magico', None)\n\nclass PublicTests(unittest.TestCase):\n    \n    def test_1(self):\n        assert eh_quadrado_magico([[2,7,6],[9,5,1],[4,3,8]])\n\n    def test_2(self):\n        assert not eh_quadrado_magico([[1,2,3],[4,5,6]])\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "e751a50196901f514b6901c232cdc4ce",
+  "iid": 6153702498893824,
+  "activity_revision": "1.0.0"
+}

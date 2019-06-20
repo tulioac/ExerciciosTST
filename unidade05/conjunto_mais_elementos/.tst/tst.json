@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "entrada = ''\nquantidade_de_elementos = 0\nindices = []\nposicao = 0\n\nwhile(entrada != 'fim'):\n    entrada = raw_input()\n    if entrada != 'fim':\n        if int(entrada) >= 0:\n            quantidade_de_elementos += 1\n        else:\n            indices.append(quantidade_de_elementos)\n            quantidade_de_elementos = 0\n\nif len(indices) > 0:\n    tamanho_maximo = 0\n    for i in range(len(indices)):\n        if indices[i] > tamanho_maximo:\n            tamanho_maximo = indices[i]\n            posicao = i\n\n    print \"Conjunto %d - %d elemento(s)\" % (posicao + 1, tamanho_maximo)",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a64b1861b3da2419de5d8a9b66211314",
+  "iid": 4709162088923136,
+  "activity_revision": "1.0.1"
+}

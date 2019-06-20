@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nstring = ''\n\nwhile (string != 'fim'):\n    string = raw_input()\n\n    if string != 'fim':\n        if len(string) == 8:\n            parte_1 = string[:4]\n            parte_2 = string[4:]\n            digito_1 = int(parte_1, 2)\n            digito_2 = int(parte_2, 2)\n            if digito_1 >= 10 or digito_2 >= 10:\n                print \"BCD inv\u00e1lido.\"\n            else:\n                print \"%d%d\" % (digito_1, digito_2)\n        else:\n            print \"Tente novamente.\"\n",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 72.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "505aace6972fb6b00a59d0ede0b2c685",
+  "iid": 6610458211516416,
+  "activity_revision": "1.0.3"
+}

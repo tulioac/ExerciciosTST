@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\ndef MA(valores):\n    soma = 0\n    for i in range(len(valores)):\n        soma += float(valores[i])\n    media = soma / len(valores)\n    print \"M\u00e9dia Aritm\u00e9tica: %.4f\" % media\n\ndef MG(valores):\n    produto = 1.0\n    for i in range(len(valores)):\n        produto *= float(valores[i])\n    media = produto ** (1.0/len(valores))\n    print \"M\u00e9dia Geom\u00e9trica: %.4f\" % media\n\ndef MH(valores):\n    soma_dos_inversos = 0\n    for i in range(len(valores)):\n        soma_dos_inversos += 1/(float(valores[i]))\n    media = len(valores)/soma_dos_inversos\n    print \"M\u00e9dia Harm\u00f4nica: %.4f\" % media\n\nentrada = ''\nwhile True:\n    entrada = raw_input()\n\n    if entrada == 'Q':\n        break\n    else:\n        entrada = entrada.split()\n        valores = raw_input().split()\n        for i in entrada:\n            if i == 'MG':\n                MG(valores)\n            elif i == 'MA':\n                MA(valores)\n            elif i == 'MH':\n                MH(valores)\n        print '-'*4",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8a10d4d1b0f545e432d1cb8901c9d01e",
+  "iid": 5346238782242816,
+  "activity_revision": "1.0.1"
+}

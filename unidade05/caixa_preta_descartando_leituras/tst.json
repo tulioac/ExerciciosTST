@@ -1,0 +1,22 @@
+{
+  "ignore": [
+    "public_tests.py",
+    "acceptance_tests.py"
+  ],
+  "tests": [
+    {
+      "category": "public",
+      "input": "10 2 3\n3 1 -1\n",
+      "name": "test_name",
+      "output": "dado inconsistente. altitude negativa.\npeso: 2\ncombustível: 2\naltitude: 1\n",
+      "type": "io"
+    },
+    {
+      "category": "public",
+      "input": "1 2 4\n-1 2 3\n",
+      "name": "outro",
+      "output": "dado inconsistente. peso negativo.\npeso: 1\ncombustível: 1\naltitude: 1\n",
+      "type": "io"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "num = float(raw_input())\n\nfrac = num - int(num)\n\nprint frac",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "08b836c546551da8c2d4b3703787c196",
+  "iid": 4749179641397248,
+  "activity_revision": "1.1.0"
+}

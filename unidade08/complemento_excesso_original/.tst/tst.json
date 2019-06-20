@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def complemento1(numero):\n    s_binario = bin(numero)\n    binario = ''\n    if numero >= 0:\n        for i in range(2, len(s_binario)):\n            binario += s_binario[i]\n    else:\n        for i in range(2, len(s_binario)):\n            if s_binario[i] == '1':\n                binario += '0'\n            else:\n                binario += '1'\n    print \"%08d\" % int(binario)\n\ndef excesso_127(numero):\n    numero += 127\n    s_binario = bin(numero)\n    binario = ''\n    for i in range(2, len(s_binario)):\n        binario += s_binario[i]\n    print \"%08d\" % int(binario)\n\nwhile True:\n    entrada = raw_input()\n    \n    if entrada[0] == '*':\n        break\n    \n    else:\n        entrada = entrada.split()\n        if entrada[0] == 'C1':\n            complemento1(int(entrada[1]))\n        elif entrada[0] == 'E127':\n            excesso_127(int(entrada[1]))",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "93d3f797f9cdd4ddd300b704bb465724",
+  "iid": 5875560853012480,
+  "activity_revision": "1.0.0"
+}

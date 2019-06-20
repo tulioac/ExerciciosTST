@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def colegas_de_sala(salasprofs, professor):\n    sala_do_prof = salasprofs[professor]\n    colegas = []\n\n    for prof, sala in salasprofs.iteritems():\n        if prof != professor and sala == sala_do_prof:\n            colegas.append(prof)\n    \n    return colegas\n\n    ",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncolegas_de_sala = getattr(undertest, 'colegas_de_sala', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_example(self):\n\n        salasprofs = {\n            'Franklin': 206,    'Tiago':206,        'Eliane': 206,\n            'Adalberto':209,    'Wilkerson':207,    'Dalton': 204,\n            'Jorge': 204\n        }\n\n        assert set(colegas_de_sala(salasprofs, 'Franklin')) == set(['Tiago', 'Eliane'])\n        assert set(colegas_de_sala(salasprofs, 'Adalberto')) == set([])\n    \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "301f90569a1941dc7b8f536ffc6a069d",
+  "iid": 5898102888202240,
+  "activity_revision": "1.0.0"
+}

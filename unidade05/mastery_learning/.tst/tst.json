@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n\nprint \"Mastery Learning\"\nprint \"C\u00e1lculo da nota na unidade\"\nprint\n\nnota_1 = float(raw_input(\"Nota? \"))\nnota_2 = float(raw_input(\"Nota? \"))\ncontador = 0\npenalizacao = 0.0\n\nmedia = (nota_1 + nota_2) / 2.0\n\nwhile(True):\n    contador += 1\n    if contador > 1:\n        penalizacao = (contador - 1) * 0.5\n\n\n    if media < 6:\n        print \"M\u00e9dia: %.1f (cursando)\" % media\n        print \"Penaliza\u00e7\u00e3o: %.1f\" % penalizacao\n\n        print\n\n        nota = float(raw_input(\"Nota? \"))\n\n        if nota > nota_1 and nota_1 < nota_2:\n            nota_1 = nota\n        elif nota > nota_2 and nota_2 < nota_1:\n            nota_2 = nota\n\n        media = (nota_1 + nota_2) / 2.0\n        \n    else:\n        print \"M\u00e9dia: %.1f (aprovado)\" % media\n        print \"Penaliza\u00e7\u00e3o: %.1f\" % penalizacao\n\n        break\n\nprint\nprint 3*'='\nprint \"Notas v\u00e1lidas: %.1f e %.1f\" % (nota_1, nota_2)\nprint \"M\u00e9dia parcial na unidade: %.1f\" % media\nprint \"Penaliza\u00e7\u00f5es: %.1f\" % penalizacao\nmedia -= penalizacao\nprint \"M\u00e9dia final na unidade: %.1f\" % media\n\n\n\n\n\n\n\n\n",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 30,\n      \"vhalstead\": 267.35,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9068ed84d10cc120d342abb3643e3bc8",
+  "iid": 5341273162514432,
+  "activity_revision": "1.0.3"
+}

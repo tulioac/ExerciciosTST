@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "nome = raw_input()\n\nprint \"Oi %s\" % nome",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "728fbf941c326d3816c153aa51133e7c",
+  "iid": 5188982413459456,
+  "activity_revision": "1.12.1"
+}

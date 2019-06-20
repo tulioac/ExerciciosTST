@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "v_inicial = float(raw_input(\"Valor atual? \"))\nv_final = float(raw_input(\"Novo valor? \"))\n\nreajuste = (v_final * 100 / v_inicial) - 100\n\nprint \"Reajuste de %.1f%%\" % reajuste ",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "7632bc04a018c7fcf21b474cb60e2dd8",
+  "iid": 5894041157763072,
+  "activity_revision": "1.1.0"
+}

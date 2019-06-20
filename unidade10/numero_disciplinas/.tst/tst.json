@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def meuIn(lista, elemento):\n    for i in lista:\n        if i == elemento:\n            return True\n    return False\n\ndef numero_disciplinas(grade, horarios, pagas):\n    provaveis = []\n    horarios_provaveis = []\n    for disciplina, requisitos in grade.iteritems():\n        if len(requisitos) == 0:\n            if not meuIn(pagas, disciplina) and not meuIn(horarios_provaveis, horarios[disciplina]):\n                provaveis.append(disciplina)\n                horarios_provaveis.append(horarios[disciplina])\n        else:\n            valido = True\n            for cada_requisitos in requisitos:\n                if not meuIn(pagas, cada_requisitos):\n                    valido = False\n            if valido and not meuIn(horarios_provaveis, horarios[disciplina]):\n                provaveis.append(disciplina)\n                horarios_provaveis.append(horarios[disciplina])\n    return len(provaveis)\n\n\ngrade = {\"p1\": [], \"lp1\": [], \"ic\": [],\"calc1\": [], \"p2\": [\"ic\", \"p1\", \"lp1\"],\n\"lp2\": [\"ic\", \"p1\", \"lp1\"], \"grafos\": [\"ic\", \"p1\", \"lp1\"], \"calc2\"  : [\"calc1\"], \n\"edados\": [\"ic\", \"p1\", \"lp1\", \"p2\", \"lp2\", \"grafos\"],\n\"leda\": [\"ic\", \"p1\", \"lp1\", \"p2\", \"lp2\", \"grafos\"]}\n\nhorarios= {\"p1\": \"s082\", \"lp1\": \"x082\", \"ic\": \"i142\", \"calc1\": \"q082\", \"p2\": \"t162\",\n\"lp2\": \"s082\", \"grafos\": \"q082\", \"calc2\": \"x162\", \"edados\": \"x162\", \"leda\": \"t102\"}\n\nnumero_disciplinas(grade, horarios, [])\nnumero_disciplinas(grade, horarios, [\"ic\", \"p1\", \"lp1\"]) # p2, lp2, grafos",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nnumero_disciplinas = getattr(undertest, 'numero_disciplinas', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def teste1(self):\n        grade = {\"p1\": [], \"lp1\": [], \"ic\": [],\"calc1\": [], \"p2\": [\"ic\", \"p1\", \"lp1\"],\n        \"lp2\": [\"ic\", \"p1\", \"lp1\"], \"grafos\": [\"ic\", \"p1\", \"lp1\"], \"calc2\"  : [\"calc1\"], \n        \"edados\": [\"ic\", \"p1\", \"lp1\", \"p2\", \"lp2\", \"grafos\"],\n        \"leda\": [\"ic\", \"p1\", \"lp1\", \"p2\", \"lp2\", \"grafos\"]}\n\n        horarios= {\"p1\": \"s082\", \"lp1\": \"x082\", \"ic\": \"i142\", \"calc1\": \"q082\", \"p2\": \"t162\",\n        \"lp2\": \"s082\", \"grafos\": \"q082\", \"calc2\": \"x162\", \"edados\": \"x162\", \"leda\": \"t102\"}\n\n        assert numero_disciplinas(grade, horarios, []) == 4\n        assert numero_disciplinas(grade, horarios, [\"ic\", \"p1\", \"lp1\"]) == 3\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "501f3a3d0e305997b3d541959efec4ef",
+  "iid": 5219560399568896,
+  "activity_revision": "1.0.0"
+}

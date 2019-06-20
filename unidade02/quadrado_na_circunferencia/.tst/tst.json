@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nimport math\nlado = float(raw_input())\n\nraio = math.sqrt(2) * lado / 2\n\nareaC = math.pi * raio * raio\nareaQ = lado * lado\n\ndif = (areaC - areaQ) * 2\n\nprint \"\u00c1rea n\u00e3o comum: %.5f\" % dif\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "220d918512bdc9ffa1d480266973bd5a",
+  "iid": 5811053329907712,
+  "activity_revision": "1.1.1"
+}

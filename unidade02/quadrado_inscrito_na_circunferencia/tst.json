@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "4.0\n",
+      "output": "Perímetro: 17.77153\nÁrea: 25.13274\n"
+    }
+  ]
+}

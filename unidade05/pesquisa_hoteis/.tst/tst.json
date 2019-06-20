@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "precos = []\ntamanho = []\nconforto = []\nhotel = []\n\nwhile (True):\n    entrada = raw_input()\n\n    if entrada != '---':\n        lista = entrada.split(',')\n        precos.append(float(lista[0]))\n        tamanho.append(int(lista[1]))\n        conforto.append(int(lista[2]))\n        hotel.append(lista[3])\n    else:\n        break\n\nmenor_preco = precos[0]\nmaior_tamanho = 0\nmaior_conforto = 0\n\nfor i in range(len(precos)):\n    if precos[i] < menor_preco:\n        menor_preco = precos[i]\n        melhor = i\n\nprint \"%s\" % hotel[melhor]\n\nfor i in range(len(tamanho)):\n    if tamanho[i] > maior_tamanho:\n        maior_tamanho = tamanho[i]\n        melhor = i\n\nprint \"%s\" % hotel[melhor]\n\nfor i in range(len(conforto)):\n    if conforto[i] > maior_conforto:\n        maior_conforto = conforto[i]\n        melhor = i\n\nprint \"%s\" % hotel[melhor]\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "64f7b384ac59b449870462e27f0a291e",
+  "iid": 6029181196435456,
+  "activity_revision": "1.0.2"
+}

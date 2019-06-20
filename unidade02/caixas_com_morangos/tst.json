@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "220\n",
+      "output": "Serão necessárias 0 caixa(s) para embalar os morangos.\n100.0% dos morangos serão perdidos.\n"
+    },
+    {
+      "category": "public",
+      "input": "440\n",
+      "output": "Serão necessárias 1 caixa(s) para embalar os morangos.\n9.1% dos morangos serão perdidos.\n"
+    }
+  ]
+}

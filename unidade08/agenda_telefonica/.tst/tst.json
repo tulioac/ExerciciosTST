@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def exibeDados(lista, indice):\n    print \"Nome: %s\" % lista[i][0]\n    print \"Fone: %d\" % lista[i][1]\n    print 10*'-'\n\ndef ordena(lista):\n    for j in range(len(lista)):\n        for i in range(len(lista)-1):\n            if lista[len(lista)-1-i][0] < lista[len(lista)-2-i][0]:\n                lista[len(lista)-1-i], lista[len(lista)-2-i] = lista[len(lista)-2-i], lista[len(lista)-1-i]\n            if lista[i][0] > lista[i+1][0]:\n                lista[i], lista[i+1] = lista[i+1], lista[i]\n\noperacao = ''\nagenda = []\nwhile True:\n    operacao = raw_input()\n    if operacao == 'finalizar':\n        break\n    elif operacao == 'inserir':\n        quantidade = int(raw_input())\n        for i in range(quantidade):\n            nome = raw_input()\n            telefone = int(raw_input())\n            agenda.append([nome, telefone])\n    elif operacao == 'buscar':\n        procurado = raw_input()\n        achou = False\n        for i in range(len(agenda)):\n            if agenda[i][0] == procurado:\n                exibeDados(agenda, i)\n                achou = True\n        if achou == False:\n            print \"Nome inexistente\"\n            print 10*'-'\n    elif operacao == 'imprimir':\n        ordena(agenda)\n        for i in range(len(agenda)):\n            exibeDados(agenda, i)\n        ",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "afda35a79b7d874eed3f251d64f37c7d",
+  "iid": 5859840601620480,
+  "activity_revision": "1.0.0"
+}

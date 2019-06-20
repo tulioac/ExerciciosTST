@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def anula(lista):\n    k = len(lista)\n    while True:\n        k -= 1\n        if len(lista) > 1:\n            if lista[k] + lista[k-1] == 0:\n                lista.pop(k), lista.pop(k-1)\n                k = len(lista) - 1\n            if k == -1:\n                break\n        else:\n            break\n    print lista\n    \n\nlista1 = [1, 2, -2, 3, 4]\nlista2 = [1, 2, -2, -1, 4]\nlista3 = [-10, 10, 10, -10]\nlista4 = [1, -1]\nlista5 = []\n\nanula(lista1)\nanula(lista2)\nanula(lista3)\nanula(lista4)\nanula(lista5)\n",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nanula = getattr(undertest, 'anula', None)\n\nclass PublicTests(unittest.TestCase):\n \n   def test_do_enunciado(self):\n       lista1 = [1, 2, -2, 3, 4]\n       assert anula(lista1) == None\n       assert lista1 == [1, 3, 4]\n\n   def test_do_enunciado_1(self):\n       lista2 = [1, 2, -2, -1, 4]\n       assert anula(lista2) == None\n       assert lista2 == [4]\n \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__])) \n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b80d114237be13388f8bfaf21f6a5e04",
+  "iid": 5055344472489984,
+  "activity_revision": "1.0.3"
+}

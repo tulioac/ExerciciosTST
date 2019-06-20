@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "valor1 = int(raw_input())\nvalor2 = int(raw_input())\nvalor3 = int(raw_input())\n\nmedia = (valor1 + valor2 + valor3) / 3.0\n\nprint \"%.3f\" % media",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "76d94b6611ea056290a0ec78aa1c0fd9",
+  "iid": 5347379532267520,
+  "activity_revision": "1.1.1"
+}

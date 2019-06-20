@@ -1,0 +1,22 @@
+{
+  "ignore": [
+    "public_tests.py",
+    "acceptance_tests.py"
+  ],
+  "tests": [
+    {
+      "category": "public",
+      "input": "100.0\n70\nchuva 70\n",
+      "name": "test1",
+      "output": "Açude passou a liberar água.\nNível: 140.00\n",
+      "type": "io"
+    },
+    {
+      "category": "public",
+      "input": "100\n50\ndemanda 50\ndemanda 50\nafluente 190\n",
+      "name": "test2",
+      "output": "Açude passou a liberar água.\nNível: 190.00\n",
+      "type": "io"
+    }
+  ]
+}

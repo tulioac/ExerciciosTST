@@ -1,0 +1,13 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nnoves_fora = getattr(undertest, 'noves_fora', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert noves_fora([9, 7, 5, 4, 3, 1]) == (2, [[9, 7, 5, 4, 3, 1], [7, 5, 4, 3, 1], [4, 3, 3, 1], [7, 3, 1], [1, 1], [2]])\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "iid": 6375430319767552,
+  "kind": "assignment",
+  "activity_revision": "1.0.3",
+  "name": null
+}

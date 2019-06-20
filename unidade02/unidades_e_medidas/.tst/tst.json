@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nmetros = float(raw_input())\n\njardas = metros / 0.9144\npes = jardas * 3\npolegadas = jardas * 36\n\nprint \"Jardas: %.3f yd\" % jardas\nprint \"P\u00e9s: %.3f ft\" % pes\nprint \"Polegadas: %.3f in\" % polegadas\n\n\n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a01904b48326fcee6c0f762cd01a826f",
+  "iid": 4717815374282752,
+  "activity_revision": "1.1.0"
+}

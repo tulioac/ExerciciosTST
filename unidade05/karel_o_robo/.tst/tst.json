@@ -1,0 +1,18 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\n# C - acima\n# B - abaixo\n# E - esquerda\n# D - direita\n\ndef meu_absoluto(numero):\n    if numero < 0:\n        return numero*(-1)\n    else:\n        return numero\n\nx = 0\ny = 0\nfim = False\nabs_x = 0\nabs_y = 0\n\nwhile (fim == False):\n    entrada = raw_input()\n    direcao = entrada[0]\n    valor = int(entrada[2])\n\n    if valor != 0:\n        if direcao == 'C':\n            y += + valor\n\n        elif direcao == 'B':\n            y -= valor\n        \n        elif direcao == 'D':\n            x += valor\n\n        elif direcao == 'E':\n            x -= valor\n\n        abs_x = meu_absoluto(x)\n        abs_y = meu_absoluto(y)\n\n        if abs_y == abs_x * 2 and x !=0 and y !=0:\n            print \"Parab\u00e9ns, conquista do portal (%d, %d)\" % (x, y)\n            fim = True\n\n    else:\n        fim = True\n        print \"Fim de jogo\"",
+      "name": "p.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 225.72,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b1ae4e964348cbcf9d4d4d690247c8a5",
+  "iid": 5523531743887360,
+  "activity_revision": "1.0.1"
+}

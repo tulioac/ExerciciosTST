@@ -1,0 +1,22 @@
+{
+  "ignore": [
+    "public_tests.py",
+    "acceptance_tests.py"
+  ],
+  "tests": [
+    {
+      "category": "public",
+      "input": "1 3 2 4    \n",
+      "name": "exemplo",
+      "output": "ok\n",
+      "type": "io"
+    },
+    {
+      "category": "public",
+      "input": "1 3 6 7 9\n",
+      "name": "outro_exemplo",
+      "output": "erro\n",
+      "type": "io"
+    }
+  ]
+}

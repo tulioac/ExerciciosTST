@@ -1,0 +1,19 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def troca(dados, i, j):\n    dados[i], dados[j] = dados[j], dados[i]\n\ndef bubblesort(dados):\n    while True:\n        trocou = False\n        for i in range(len(dados)-1):\n            if dados[i] > dados[i+1]:\n                troca(dados, i, i+1)\n                trocou = True\n        if not trocou:\n            break\n    print dados\n",
+      "name": "p.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nbubblesort = getattr(undertest, 'bubblesort', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        lista = [3,9,1,2]\n        bubblesort(lista)\n        assert lista == [1,2,3,9]\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b74413698b21df615303533709161e73",
+  "iid": 6396409825722368,
+  "activity_revision": "1.0.0"
+}

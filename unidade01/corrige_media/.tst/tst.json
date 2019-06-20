@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "# coding: utf-8\n# C\u00e1lculo da m\u00e9dia em \u00c1lgebra Vetorial\nnota1 = 10\nnota2 = 5\n\nmedia = (nota1 + nota2) / 2.0\n\nprint \"Nota 1: %4.1f\" % nota1\nprint \"Nota 2: %4.1f\" % nota2\nprint \"M\u00e9dia : %4.1f\" % media\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "ff52b391b6a934d71e88795869d5f73a",
+  "iid": 5221764153999360,
+  "activity_revision": "1.1.0"
+}

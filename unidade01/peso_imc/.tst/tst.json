@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "peso = float(raw_input())\naltura = float(raw_input())\n\nimc = peso / altura ** 2\npeso_necessario = (24.9 - imc) * altura ** 2\n\n\n\nprint \"IMC atual = %.2f\" % imc\nprint \"Peso a ser ganho/perdido = %.2f\" % peso_necessario",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a299e557332f9cae42091687f1633c3e",
+  "iid": 5947800961417216,
+  "activity_revision": "2.0.0"
+}

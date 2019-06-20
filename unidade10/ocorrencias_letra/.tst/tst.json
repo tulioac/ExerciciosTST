@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def meuIn(elemento, lista):\n    for i in lista:\n        if i == elemento:\n            return True\n    return False\n\nentrada = raw_input().lower()\n\nletras = {}\n\nfor i in entrada:\n    if meuIn(i, letras) and i != ' ':\n        letras[i] += 1\n    elif i != ' ':\n        letras[i] = 1\n\nresposta = ['', 0]\nfor caractere, quantidade in letras.iteritems():\n    if quantidade > resposta[1]:\n        resposta[1] = quantidade\n        resposta[0] = caractere\n\nprint \"%s %d\" % (resposta[0], resposta[1]) \n\n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "07ba3dfab3b7622ccbfba0ffb03ea7d1",
+  "iid": 6345460306411520,
+  "activity_revision": "1.0.0"
+}

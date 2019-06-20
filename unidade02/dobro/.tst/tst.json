@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "valor = int(raw_input())\n\nprint valor << 1",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2c64251f02883beead543c28e6ed9e75",
+  "iid": 5936659581370368,
+  "activity_revision": "1.1.1"
+}

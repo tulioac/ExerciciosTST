@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "h = int(raw_input())\n\nespacos = h\nos = -1\n\nfor i in range(h):\n    espacos -= 1\n    os +=  2\n    print ' '*espacos + 'o'*os\nprint ' '*(h-1) + 'o'",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2361122d9d54892d08b647080ec02a13",
+  "iid": 5878985921658880,
+  "activity_revision": "1.0.0"
+}

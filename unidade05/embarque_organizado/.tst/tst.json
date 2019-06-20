@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "def ordena_lista(lista):\n    valores = lista\n    for i in range(len(valores)):\n        for j in range (len(valores) - i - 1):\n            if valores[j] < valores[j + 1]:\n                valores[j], valores[j+1] = valores[j+1], valores[j] \n    return valores\n\nentrada = raw_input()\nposicoes = entrada.split()\nlista = []\nordenada = []\n\nfor i in posicoes:\n    if int(i) % 2 == 0:\n        lista.append('0') # par\n        ordenada.append('0') # par\n\n    else:\n        lista.append('1') # impar\n        ordenada.append('1') # impar\n\nordenada = ordena_lista(ordenada)\n\nif lista == ordenada:\n    print \"ok\"\nelse:\n    print \"erro\"\n    ",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "a5517fcd3872b64e505ffc22be2380bb",
+  "iid": 6478242340929536,
+  "activity_revision": "1.0.1"
+}

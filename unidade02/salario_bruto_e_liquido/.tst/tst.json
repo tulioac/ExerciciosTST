@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n\nnome = raw_input()\nhoras_extras = float(raw_input())\nsalario_min = float(raw_input())\npreco_extra = float(raw_input())\n\nsalario_extra = horas_extras * preco_extra\nsalario_bruto = 4 * salario_min + salario_extra\n\ndesconto_inss = salario_bruto * 0.12\ndesconto_renda = salario_bruto * 0.2\n\nsalario_liquido = salario_bruto - (desconto_inss + desconto_renda)\n\nprint \"O Sal\u00e1rio Bruto de Antonio \u00e9 de R$ %.2f\" % salario_bruto\nprint \"O Sal\u00e1rio L\u00edquido de Antonio \u00e9 de R$ %.2f\" % salario_liquido\n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "44c7ad961bd615d508a89a9404c29b6c",
+  "iid": 6613452709691392,
+  "activity_revision": "1.1.0"
+}

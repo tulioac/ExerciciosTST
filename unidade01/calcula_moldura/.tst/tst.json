@@ -1,0 +1,14 @@
+{
+  "files": {
+    "p.py": {
+      "category": "answer",
+      "data": "a = float(raw_input())\nb = float(raw_input())\n\npreco = (a/100 + b/100) * 120 * 2\n\nprint \"R$\" , preco \n\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9300ae73f18c3dbc8249b17d2a4b6edf",
+  "iid": 6161465551618048,
+  "activity_revision": "1.0.4"
+}

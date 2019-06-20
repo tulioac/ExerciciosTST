@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\najeita_lista = getattr(undertest, 'ajeita_lista', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_do_enunciado(self):\n       lista1 = [3,2,1,4,5,6,7,8,9]\n       assert ajeita_lista(lista1) == None\n       assert lista1 == [8, 6, 4, 2, 1, 3, 5, 7, 9]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "p.py": {
+      "category": "answer",
+      "data": "def ajeita_lista(lista):\n    if len(lista) > 0:\n        for i in range(len(lista)-1, -1, -1):\n            for k in range (len(lista)-1, -1, -1):\n                if lista[k] % 2 == 0:\n                    lista[k], lista[i] = lista[i], lista[k]\n        impar = 0\n        for j in range(len(lista)):\n            if lista[j] % 2 != 0:\n                impar = j\n                break\n\n        for i in range(0, impar):\n            for j in range(i, impar):\n                if lista[i] < lista[j]:\n                    lista[i], lista[j] = lista[j], lista[i]\n\n        for i in range(0, impar):\n            for j in range(i, impar):\n                if lista[i] < lista[j]:\n                    lista[i], lista[j] = lista[j], lista[i]\n\n        for i in range(impar, len(lista)):\n            for j in range(i, len(lista)):\n                if lista[i] > lista[j]:\n                    lista[i], lista[j] = lista[j], lista[i]\n",
+      "name": "p.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1c77fed2806ddba4b7063a7b4f4c70d3",
+  "iid": 5889457018372096,
+  "activity_revision": "1.0.2"
+}

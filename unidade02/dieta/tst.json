@@ -1,0 +1,9 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "2\n2\n1200\n",
+      "output": "Você precisará de 5.92 dias de dieta\n"
+    }
+  ]
+}
